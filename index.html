@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlianzaFysio | Fysiotherapie Haarlem</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Persoonlijke fysiotherapie in Haarlem voor herstel, sportrevalidatie, pijnklachten en duurzame gezondheid. Gevestigd in Healthy Bastards aan de Zijlweg.">
+    <meta name="keywords" content="Fysiotherapie Haarlem, Fysio Haarlem, Sportrevalidatie Haarlem, Zijlweg fysiotherapie, AlianzaFysio, Dry needling Haarlem, TMJ kaakklachten, Knie heup revalidatie">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="AlianzaFysio">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alianzafysio.com/">
+    <meta property="og:title" content="AlianzaFysio | Fysiotherapie Haarlem">
+    <meta property="og:description" content="Persoonlijke fysiotherapie gericht op duurzaam herstel en actieve revalidatie in Haarlem. Ervaar professionele zorg op maat.">
+    <meta property="og:image" content="assets/hero.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alianzafysio.com/">
+    <meta property="twitter:title" content="AlianzaFysio | Fysiotherapie Haarlem">
+    <meta property="twitter:description" content="Persoonlijke fysiotherapie gericht op duurzaam herstel en actieve revalidatie in Haarlem. Ervaar professionele zorg op maat.">
+    <meta property="twitter:image" content="assets/hero.jpg">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physiotherapy",
+      "name": "AlianzaFysio",
+      "image": "https://alianzafysio.com/assets/hero.jpg",
+      "@id": "https://alianzafysio.com/#website",
+      "url": "https://alianzafysio.com",
+      "telephone": "+31 6 12345678",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Zijlweg Zijweg 2",
+        "addressLocality": "Haarlem",
+        "postalCode": "2015 BK",
+        "addressCountry": "NL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.382410,
+        "longitude": 4.626285
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:30",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "12:30"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/alianzafysio",
+        "https://www.linkedin.com/company/alianzafysio"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="header-container container">
+            <a href="#home" class="logo-link" aria-label="AlianzaFysio Homepage">
+                <span class="logo-img-wrapper">
+                    <img src="assets/logo-circle.jpg" alt="AlianzaFysio Logo" class="site-logo-img">
+                </span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="desktop-nav" aria-label="Hoofdnavigatie">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Over ons</a></li>
+                    <li><a href="#treatments" class="nav-link">Behandelingen</a></li>
+                    <li><a href="#tarieven" class="nav-link">Tarieven</a></li>
+                    <li><a href="#vergoeding" class="nav-link">Vergoeding</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Book CTA Button -->
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-header">Afspraak maken</a>
+            </div>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="mobile-nav-toggle" aria-controls="mobile-nav" aria-expanded="false" aria-label="Menu openen">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobiele navigatie" aria-hidden="true">
+        <ul class="mobile-nav-list">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">Over ons</a></li>
+            <li><a href="#treatments" class="mobile-nav-link">Behandelingen</a></li>
+            <li><a href="#tarieven" class="mobile-nav-link">Tarieven</a></li>
+            <li><a href="#vergoeding" class="mobile-nav-link">Vergoeding</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            <li><a href="#contact" class="btn btn-mobile-cta">Afspraak maken</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <!-- 1. Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-diagonal"></div>
+            
+            <div class="container hero-container grid-2">
+                <div class="hero-content-wrapper fade-in-section">
+                    <h1 class="hero-title">
+                        Beweeg beter.<br>
+                        Voel u beter.<br>
+                        Leef beter.
+                    </h1>
+                    <p class="hero-description">
+                        Persoonlijke fysiotherapie in Haarlem voor herstel, beweging en duurzame gezondheid. Wij combineren evidence-based zorg met een actieve aanpak voor langdurig herstel en vitaliteit.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Afspraak maken</a>
+                        <a href="#tarieven" class="btn btn-secondary">Bekijk tarieven</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper fade-in-section">
+                    <div class="hero-image-container">
+                        <img src="assets/entrance.jpg" alt="AlianzaFysio Entree aan de Zijlweg Zijweg" class="hero-img" loading="eager">
+                        <div class="hero-image-accent-border"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Benefits Strip (Four Pillars) -->
+        <section class="benefits-strip-section">
+            <div class="container benefits-container grid-4">
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon-wrapper">
+                        <!-- Book Icon (Educatie) -->
+                        <svg viewBox="0 0 24 24" class="benefit-icon" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21C12 21 8.5 18 3 18V5C8.5 5 12 8 12 8C12 8 15.5 5 21 5V18C15.5 18 12 21 12 21Z" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M12 8V21" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="benefit-text">
+                        <h3 class="benefit-title">Educatie</h3>
+                        <p class="benefit-description">Wij geven u inzicht in de werking van uw lichaam.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon-wrapper">
+                        <!-- Person Raised Arms Icon (Herstel) -->
+                        <svg viewBox="0 0 24 24" class="benefit-icon" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="5" r="2.5" stroke="#5E6A5A" stroke-width="1.8" fill="none"/>
+                            <path d="M5 12C5 12 8.5 10 12 10C15.5 10 19 12 19 12M12 10V18M12 18L9 22M12 18L15 22" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="benefit-text">
+                        <h3 class="benefit-title">Herstel</h3>
+                        <p class="benefit-description">Wij ondersteunen uw herstel met persoonlijke zorg.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon-wrapper">
+                        <!-- Dumbbell Icon (Prestatie) -->
+                        <svg viewBox="0 0 24 24" class="benefit-icon" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.5 6.5H4.5C3.39543 6.5 2.5 7.39543 2.5 8.5V15.5C2.5 16.6046 3.39543 17.5 4.5 17.5H6.5M17.5 6.5H19.5C20.6046 6.5 21.5 7.39543 21.5 8.5V15.5C21.5 16.6046 20.6046 17.5 19.5 17.5H17.5M6.5 12H17.5M6.5 9.5V14.5M17.5 9.5V14.5" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="benefit-text">
+                        <h3 class="benefit-title">Prestatie</h3>
+                        <p class="benefit-description">Verbeter uw kracht, mobiliteit en sportprestaties.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon-wrapper">
+                        <!-- Lotus Icon (Welzijn) -->
+                        <svg viewBox="0 0 24 24" class="benefit-icon" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C12 22 17 18 17 14C17 10 12 4 12 4C12 4 7 10 7 14C7 18 12 22 12 22Z" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                            <path d="M12 22C12 22 21 19 20 13C19 7 12 6 12 6C12 6 5 7 4 13C3 19 12 22 12 22Z" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" fill="none" />
+                        </svg>
+                    </div>
+                    <div class="benefit-text">
+                        <h3 class="benefit-title">Welzijn</h3>
+                        <p class="benefit-description">Gericht op langdurige gezondheid en vitaliteit.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. Welcome / About Section -->
+        <section id="about" class="about-welcome-section section-padding">
+            <div class="container grid-3-about">
+                
+                <!-- Left Column: Slogan and Info -->
+                <div class="about-left-col fade-in-section">
+                    <span class="sub-headline">Welkom bij</span>
+                    <h2 class="section-title text-uppercase">AlianzaFysio</h2>
+                    <p class="about-intro-text">
+                        AlianzaFysio is een moderne fysiotherapiepraktijk in Haarlem. Wij helpen u bij pijnklachten, blessures, revalidatie en het verbeteren van uw bewegingsvrijheid.
+                    </p>
+                    <p class="about-intro-text text-muted">
+                        Met onze persoonlijke zorg en evidence-based aanpak begeleiden we u bij uw herstel en stimuleren we actief bewegen om uw doelen te bereiken. We stemmen de behandeling volledig af op uw specifieke situatie.
+                    </p>
+                    <div class="about-btn-wrap">
+                        <a href="#treatments" class="btn btn-secondary btn-small">Bekijk behandelingen</a>
+                    </div>
+                </div>
+
+                <!-- Middle Column: Focus Cards -->
+                <div class="about-middle-col grid-2-cards fade-in-section">
+                    
+                    <div class="focus-card">
+                        <div class="focus-card-img-wrapper">
+                            <img src="assets/knee.jpg" alt="Fysiotherapeut behandelt de knie van een patiënt" class="focus-card-img" loading="lazy">
+                        </div>
+                        <div class="focus-card-content">
+                            <h3 class="focus-card-title">Persoonlijke aanpak</h3>
+                            <p class="focus-card-desc">Persoonlijke zorg en behandelingen afgestemd op uw unieke behoeften en doelen.</p>
+                        </div>
+                    </div>
+
+                    <div class="focus-card">
+                        <div class="focus-card-img-wrapper">
+                            <img src="assets/gym.png" alt="Moderne revalidatieruimte met trainingsrekken en gewichten" class="focus-card-img" loading="lazy">
+                        </div>
+                        <div class="focus-card-content">
+                            <h3 class="focus-card-title">Geïntegreerde omgeving</h3>
+                            <p class="focus-card-desc">Gevestigd in de gym van Healthy Bastards voor een optimale revalidatie en training.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Quick Contact Details -->
+                <div class="about-right-col contact-snippet fade-in-section">
+                    <div class="contact-details-box">
+                        
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <svg viewBox="0 0 24 24" class="svg-detail-icon" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#5E6A5A"/>
+                                </svg>
+                            </div>
+                            <div class="detail-text">
+                                <p class="detail-label">Bezoekadres</p>
+                                <p class="detail-value">
+                                    Zijlweg Zijweg 2<br>
+                                    2015 BK Haarlem<br>
+                                    <span class="location-context">(gevestigd in <a href="https://healthy-bastards.nl/" target="_blank" rel="noopener noreferrer" class="gym-link">Healthy Bastards</a>)</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <svg viewBox="0 0 24 24" class="svg-detail-icon" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="#5E6A5A"/>
+                                </svg>
+                            </div>
+                            <div class="detail-text">
+                                <p class="detail-label">Postadres</p>
+                                <p class="detail-value">
+                                    Prinses Beatrixplein 8 H<br>
+                                    2033 WH Haarlem
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <svg viewBox="0 0 24 24" class="svg-detail-icon" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#5E6A5A"/>
+                                </svg>
+                            </div>
+                            <div class="detail-text">
+                                <p class="detail-label">Telefoon</p>
+                                <p class="detail-value"><a href="tel:+31612345678" class="contact-link">+31 6 12345678</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">
+                                <svg viewBox="0 0 24 24" class="svg-detail-icon" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="#5E6A5A"/>
+                                </svg>
+                            </div>
+                            <div class="detail-text">
+                                <p class="detail-label">E-mail</p>
+                                <p class="detail-value"><a href="mailto:info@alianzafysio.com" class="contact-link">info@alianzafysio.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="divider-line"></div>
+
+                        <div class="legal-registration-numbers">
+                            <p><strong>AGB-praktijkcode:</strong> 04900301</p>
+                            <p><strong>KvK-nummer:</strong> 42007289</p>
+                            <p><strong>Vestigingsnr:</strong> 000065108051</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Team Section ( Francisco Alonso & Maartje Wouda) -->
+        <section class="therapist-profile-section section-padding-double bg-white-contrast">
+            <div class="container grid-2-profile">
+                
+                <!-- Left: Team Images Collage -->
+                <div class="profile-image-wrapper fade-in-section">
+                    <div class="team-images-collage">
+                        <div class="collage-frame primary-frame">
+                            <img src="assets/photo-a.jpg" alt="Behandeling bij AlianzaFysio" class="collage-image" loading="lazy">
+                            <div class="collage-image-backdrop"></div>
+                        </div>
+                        <div class="collage-frame secondary-frame">
+                            <img src="assets/photo-b.jpg" alt="Dry Needling behandeling bij AlianzaFysio" class="collage-image" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Team Profiles -->
+                <div class="profile-info-wrapper fade-in-section">
+                    <span class="sub-headline">Ontmoet ons team</span>
+                    <h2 class="section-title">Onze Specialisten</h2>
+                    
+                    <div class="team-members-container">
+                        
+                        <!-- Member 1: Francisco Alonso -->
+                        <div class="team-member-card">
+                            <h3 class="member-name">Francisco Javier Alonso Nicolas</h3>
+                            <span class="member-title">Fysiotherapeut & Eigenaar</span>
+                            <div class="legal-registration-numbers" style="margin-bottom: 12px; opacity: 0.8;">
+                                <p style="margin-bottom: 3px;"><strong>BIG-nummer:</strong> 29921979604 &nbsp;|&nbsp; <strong>AGB-code:</strong> 04244042</p>
+                            </div>
+                            <p class="profile-text">
+                                Francisco is een ervaren en gedreven fysiotherapeut. Hij is gespecialiseerd in het behandelen van sportblessures, dry needling en kaakklachten (TMJ-disfunctie).
+                            </p>
+                            <p class="profile-text text-muted">
+                                Hij heeft brede ervaring in het behandelen van nek- en rugklachten, evenals complexe post-operatieve revalidatietrajecten (zoals voorste kruisband-, heup- en knie-revalidatie). Francisco richt zich op het herstellen van een optimaal bewegingspatroon voor duurzaam resultaat.
+                            </p>
+                            <div class="specialties-badges-wrapper">
+                                <span class="specialty-badge">Sportblessures</span>
+                                <span class="specialty-badge">Dry Needling</span>
+                                <span class="specialty-badge">Kaakklachten (TMJ)</span>
+                                <span class="specialty-badge">Revalidatie na operatie</span>
+                                <span class="specialty-badge">Nek- & rugklachten</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-divider"></div>
+
+                        <!-- Member 2: Maartje Wouda -->
+                        <div class="team-member-card">
+                            <h3 class="member-name">Maartje Wouda</h3>
+                            <span class="member-title">Fysiotherapeut & Eigenaar</span>
+                            <div class="legal-registration-numbers" style="margin-bottom: 12px; opacity: 0.8;">
+                                <p style="margin-bottom: 3px;"><strong>BIG-nummer:</strong> 69923653104 &nbsp;|&nbsp; <strong>AGB-code:</strong> 04245832</p>
+                            </div>
+                            <p class="profile-text">
+                                Maartje is een fysiotherapeute die uitblinkt in hands-on behandelingen en grondig diagnostisch onderzoek. Haar persoonlijke benadering stelt de patiënt centraal in elk revalidatieproces.
+                            </p>
+                            <p class="profile-text text-muted">
+                                Zij is gespecialiseerd in sportgerelateerde blessures en revalidatietraining. Daarnaast heeft zij ruime ervaring met de behandeling en begeleiding van chronische aandoeningen, waarbij het verbeteren van mobiliteit, functioneel herstel en kwaliteit van leven vooropstaan.
+                            </p>
+                            <div class="specialties-badges-wrapper">
+                                <span class="specialty-badge">Hands-on behandeling</span>
+                                <span class="specialty-badge">Diagnostiek & Assessment</span>
+                                <span class="specialty-badge">Sportblessures</span>
+                                <span class="specialty-badge">Chronische aandoeningen</span>
+                                <span class="specialty-badge">Mobiliteit & Functioneel herstel</span>
+                                <span class="specialty-badge">Dry needling</span>
+                                <span class="specialty-badge">Mulligan Concept</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. Treatments / Services Section (8 cards) -->
+        <section id="treatments" class="treatments-section section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-section">
+                    <span class="sub-headline">Behandelingen</span>
+                    <h2 class="section-title">Therapie. Bewegen. Herstel.</h2>
+                    <p class="section-description">
+                        We bieden gerichte en evidence-based fysiotherapeutische zorg, specifiek afgestemd op uw lichaam, klachten en levensstijl.
+                    </p>
+                </div>
+
+                <div class="treatments-grid grid-4 fade-in-section">
+                    
+                    <!-- Card 1 -->
+                    <div class="treatment-card">
+                        <div class="treatment-card-header">
+                            <span class="treatment-number">01</span>
+                            <div class="treatment-icon-wrap">
+                                <!-- Joint Icon style -->
+                                <svg viewBox="0 0 24 24" class="treatment-card-icon" fill="none" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                    <path d="M12 8v8M8 12h8"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="treatment-title">Algemene fysiotherapie</h3>
+                        <p class="treatment-desc">
+                            Behandeling van uiteenlopende klachten aan het bewegingsapparaat om uw dagelijks functioneren te verbeteren en fysieke pijn effectief te verminderen.
+                        </p>
+                        <ul class="treatment-features">
+                            <li>Gewrichtsmobilisatie</li>
+                            <li>Spierbehandelingen</li>
+                            <li>Houdingsadvies & coaching</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="treatment-card">
+                        <div class="treatment-card-header">
+                            <span class="treatment-number">02</span>
+                            <div class="treatment-icon-wrap">
+                                <!-- Running/Shoe Icon style -->
+                                <svg viewBox="0 0 24 24" class="treatment-card-icon" fill="none" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 4l-9 11h9l-1 5 9-11h-9z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="treatment-title">Sportblessures</h3>
+                        <p class="treatment-desc">
+                            Gericht herstel voor sporters van elk niveau. We analyseren de oorzaak en begeleiden u veilig en effectief terug naar uw gewenste sportieve prestaties.
+                        </p>
+                        <ul class="treatment-features">
+                            <li>Hardloop- & bewegingsanalyse</li>
+                            <li>Sportspecifieke training</li>
+                            <li>Blessurepreventie advies</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="treatment-card">
+                        <div class="treatment-card-header">
+                            <span class="treatment-number">03</span>
+                            <div class="treatment-icon-wrap">
+                                <!-- Shield/Hospital Cross -->
+                                <svg viewBox="0 0 24 24" class="treatment-card-icon" fill="none" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M12 8v8M9 12h6"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="treatment-title">Revalidatie na operatie</h3>
+                        <p class="treatment-desc">
+                            Evidence-based begeleiding na orthopedische ingrepen zoals een voorste kruisbandreconstructie (ACL), knieprothese of heupprothese.
+                        </p>
+                        <ul class="treatment-features">
+                            <li>Kruisband- & meniscustraject</li>
+                            <li>Knie- & heupprothese herstel</li>
+                            <li>Krachts- & stabiliteitsmetingen</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="treatment-card">
+                        <div class="treatment-card-header">
+                            <span class="treatment-number">04</span>
+                            <div class="treatment-icon-wrap">
+                                <!-- Spine/Wave Icon style -->
+                                <svg viewBox="0 0 24 24" class="treatment-card-icon" fill="none" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3v18M17 5H7M19 10H5M18 15H6M16 20H8"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="treatment-title">Nek-, rug- en schouderklachten</h3>
+                        <p class="treatment-desc">
+                            Behandeling van acute of chronische pijnklachten in de wervelkolom en de schouderregio, onder meer door mobilisatie en gerichte training.
+                        </p>
+                        <ul class="treatment-features">
+                            <li>Houdingscorrectie</li>
+                            <li>Wervelkolom mobilisaties</li>
+                            <li>Belastbaarheid vergroten</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="treatment-card">
+                        <div class="treatment-card-header">
+                            <span class="treatment-number">05</span>
+                            <div class="treatment-icon-wrap">
+                                <!-- Target/Circle articulation -->
+                                <svg viewBox="0 0 24 24" class="treatment-card-icon" fill="none" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6c-3.3 0-6 2.7-6 6s2.7 6 6 6"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="treatment-title">Knie- en heupklachten</h3>
+                        <p class="treatment-desc">
+                            Therapie bij artrose, meniscusletsels, peesklachten of slijtage. We versterken de spieren rondom het gewricht voor pijnvrij bewegen.
+                        </p>
+                        <ul class="treatment-features">
+                            <li>Artrose management</li>
+                            <li>Belastingpatronen corrigeren</li>
+                            <li>Spierversterkende oefeningen</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="treatment-card">
+                        <div class="treatment-card-header">
+                            <span class="treatment-number">06</span>
+                            <div class="treatment-icon-wrap">
+                                <!-- Needle/Thin line vector -->
+                                <svg viewBox="0 0 24 24" class="treatment-card-icon" fill="none" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="2" y1="22" x2="16" y2="8"/>
+                                    <circle cx="19" cy="5" r="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="treatment-title">Dry needling</h3>
+                        <p class="treatment-desc">
+                            Snelle en effectieve ontspanning van verharde spierknopen (triggerpoints) door middel van flinterdunne naaldjes, voor directe verlichting en bewegingsvrijheid.
+                        </p>
+                        <ul class="treatment-features">
+                            <li>Spierknopen ontspannen</li>
+                            <li>Directe pijnvermindering</li>
+                            <li>Verbeterde mobiliteit</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="treatment-card">
+                        <div class="treatment-card-header">
+                            <span class="treatment-number">07</span>
+                            <div class="treatment-icon-wrap">
+                                <!-- Head outline/TMJ jaw -->
+                                <svg viewBox="0 0 24 24" class="treatment-card-icon" fill="none" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="8.5" cy="7" r="4"/>
+                                    <path d="M20 8l-3 3 3 3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="treatment-title">Kaakklachten / TMJ</h3>
+                        <p class="treatment-desc">
+                            Gespecialiseerde behandeling van kauwspieren, kaakgewrichten en gerelateerde klachten zoals tandenknarsen, kaakklemmen of spanningshoofdpijn.
+                        </p>
+                        <ul class="treatment-features">
+                            <li>Kaakgewricht mobilisatie</li>
+                            <li>Ontspanning kauwspieren</li>
+                            <li>Gerichte thuisoefeningen</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="treatment-card">
+                        <div class="treatment-card-header">
+                            <span class="treatment-number">08</span>
+                            <div class="treatment-icon-wrap">
+                                <!-- Dumbbell / Barbells -->
+                                <svg viewBox="0 0 24 24" class="treatment-card-icon" fill="none" stroke="#5E6A5A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.5 6.5H4.5C3.5 6.5 2.5 7.5 2.5 8.5V15.5C2.5 16.5 3.5 17.5 4.5 17.5H6.5M17.5 6.5H19.5C20.5 6.5 21.5 7.5 21.5 8.5V15.5C21.5 16.5 20.5 17.5 19.5 17.5H17.5M6.5 12H17.5M6.5 9.5V14.5M17.5 9.5V14.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="treatment-title">Oefentherapie en training</h3>
+                        <p class="treatment-desc">
+                            Actieve revalidatie en functionele krachttraining in de revalidatieruimte. We bouwen uw fysieke belastbaarheid op ter voorkoming van herhaalde klachten.
+                        </p>
+                        <ul class="treatment-features">
+                            <li>Functionele krachttraining</li>
+                            <li>Stabiliteit & mobiliteit</li>
+                            <li>Voorkomen van recidief</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Tarieven Section -->
+        <section id="tarieven" class="tarieven-section section-padding bg-white-contrast">
+            <div class="container">
+                <div class="section-header text-center fade-in-section">
+                    <span class="sub-headline">Tarieven 2026</span>
+                    <h2 class="section-title">Kosten & Behandelingen</h2>
+                    <p class="section-description">
+                        Transparante en duidelijke tarieven voor onze fysiotherapeutische zorg in 2026.
+                    </p>
+                </div>
+
+                <div class="tarieven-table-wrapper fade-in-section">
+                    <table class="tarieven-table">
+                        <thead>
+                            <tr>
+                                <th>Omschrijving behandeling</th>
+                                <th>Code</th>
+                                <th style="text-align: right;">Tarief</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Screening, intake en onderzoek na screening</td>
+                                <td class="tarieven-code">1864</td>
+                                <td class="tarieven-price">€ 60,00</td>
+                            </tr>
+                            <tr>
+                                <td>Intake en onderzoek na verwijzing</td>
+                                <td class="tarieven-code">1870</td>
+                                <td class="tarieven-price">€ 60,00</td>
+                            </tr>
+                            <tr>
+                                <td>Zitting fysiotherapie</td>
+                                <td class="tarieven-code">1000</td>
+                                <td class="tarieven-price">€ 50,00</td>
+                            </tr>
+                            <tr>
+                                <td>Zitting manuele therapie</td>
+                                <td class="tarieven-code">1200</td>
+                                <td class="tarieven-price">€ 60,00</td>
+                            </tr>
+                            <tr>
+                                <td>Zitting oedeemtherapie</td>
+                                <td class="tarieven-code">1500</td>
+                                <td class="tarieven-price">€ 60,00</td>
+                            </tr>
+                            <tr>
+                                <td>Intake en onderzoek aan huis</td>
+                                <td class="tarieven-code">1871</td>
+                                <td class="tarieven-price">€ 99,00</td>
+                            </tr>
+                            <tr>
+                                <td>Zitting fysiotherapie aan huis</td>
+                                <td class="tarieven-code">1001</td>
+                                <td class="tarieven-price">€ 75,00</td>
+                            </tr>
+                            <tr>
+                                <td>Zitting manuele therapie aan huis</td>
+                                <td class="tarieven-code">1201</td>
+                                <td class="tarieven-price">€ 87,50</td>
+                            </tr>
+                            <tr>
+                                <td>Niet nagekomen afspraak of minder dan 24 uur vooraf afgezegd</td>
+                                <td class="tarieven-code">—</td>
+                                <td class="tarieven-price">€ 39,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tarieven-note-box fade-in-section">
+                    <p style="margin-bottom: 0;">
+                        <strong>Let op:</strong> Onze tarieven gelden voor niet-verzekerde zorg, behandelingen buiten uw aanvullende verzekering of wanneer vergoeding niet van toepassing is.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Reimbursement / Chronic Indication Section -->
+        <section id="vergoeding" class="vergoeding-section section-padding">
+            <div class="container">
+                <div class="grid-2-vergoeding">
+                    
+                    <div class="vergoeding-intro fade-in-section">
+                        <span class="sub-headline">Vergoedingen</span>
+                        <h2 class="section-title">Vergoeding bij een chronische indicatie</h2>
+                        <p class="about-intro-text">
+                            Voor sommige aandoeningen wordt fysiotherapie vergoed vanuit de basisverzekering. Dit geldt alleen wanneer uw aandoening voorkomt op de officiële lijst van chronische aandoeningen van de overheid.
+                        </p>
+                        <p class="about-intro-text text-muted">
+                            Houd er rekening mee dat de zorgverzekeraar strikte regels hanteert rondom chronische indicaties en de start van de vergoedingen uit het basispakket.
+                        </p>
+                    </div>
+
+                    <div class="vergoeding-text-box fade-in-section">
+                        <h3 class="vergoeding-subtitle">Belangrijk om te weten:</h3>
+                        <ul class="vergoeding-list">
+                            <li>
+                                <strong>Geen automatische dekking:</strong> Niet iedere langdurige of 'chronische' klacht valt onder deze wettelijke regeling.
+                            </li>
+                            <li>
+                                <strong>Eerste 20 behandelingen:</strong> Deze worden in principe <strong>niet</strong> vergoed vanuit de basisverzekering.
+                            </li>
+                            <li>
+                                <strong>Aanvullende verzekering:</strong> Deze eerste 20 behandelingen kunnen eventueel wel (geheel of gedeeltelijk) worden vergoed vanuit uw aanvullende zorgverzekering.
+                            </li>
+                            <li>
+                                <strong>Vanaf de 21e behandeling:</strong> Vanaf deze zitting wordt fysiotherapie in de meeste gevallen volledig vergoed vanuit de basisverzekering.
+                            </li>
+                            <li>
+                                <strong>Eigen risico:</strong> Op de vergoedingen die vanuit de basisverzekering worden gedaan, is het wettelijke eigen risico van toepassing.
+                            </li>
+                        </ul>
+
+                        <p class="vergoeding-contact-note text-muted">
+                            Twijfelt u of uw aandoening in aanmerking komt voor vergoeding? <a href="#contact">Neem gerust contact met ons op</a>. Wij helpen u graag bij het beoordelen van uw persoonlijke situatie.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Opening Hours Section (Standalone clean banner style) -->
+        <section class="benefits-strip-section" style="background-color: var(--color-white); padding: 40px 0;">
+            <div class="container text-center">
+                <span class="sub-headline" style="margin-bottom: 8px;">Wanneer kunt u bij ons terecht</span>
+                <h3 style="margin-bottom: 25px; font-weight: 600;">Openingstijden</h3>
+                <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; font-size: 15px;">
+                    <div>
+                        <strong>Maandag t/m vrijdag:</strong> <span style="color: var(--color-sage); font-weight: 600;">07:30 – 21:00</span>
+                    </div>
+                    <div>
+                        <strong>Zaterdag:</strong> <span style="color: var(--color-sage); font-weight: 600;">08:00 – 12:30</span>
+                    </div>
+                    <div>
+                        <strong>Zondag:</strong> <span style="opacity: 0.6;">Gesloten</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Contact Section -->
+        <section id="contact" class="contact-section section-padding-double">
+            <div class="container grid-2-contact">
+                
+                <!-- Left: Practice Info & Opening Hours & Embedded Grayscale Map -->
+                <div class="contact-info-wrapper fade-in-section">
+                    <span class="sub-headline">Neem contact op</span>
+                    <h2 class="section-title">Start uw herstel</h2>
+                    <p class="contact-intro-description">
+                        Neem contact met ons op om een afspraak te maken of uw vragen te stellen. Wij reageren doorgaans binnen 24 uur.
+                    </p>
+
+                    <!-- Address details box -->
+                    <div class="opening-hours-box" style="margin-bottom: 30px;">
+                        <h3 class="hours-title" style="margin-bottom: 15px;">Praktijkgegevens</h3>
+                        <p style="font-size: 14px; line-height: 1.6; margin-bottom: 0;">
+                            <strong>AlianzaFysio Fysiotherapie</strong><br>
+                            Bezoekadres: Zijlweg Zijweg 2, 2015 BK Haarlem (Healthy Bastards)<br>
+                            E-mail: <a href="mailto:info@alianzafysio.com" style="color: var(--color-sage); text-decoration: underline;">info@alianzafysio.com</a><br>
+                            Telefoon: +31 6 12345678 (placeholder)<br>
+                            KvK-nummer: 42007289 | Vestigingsnr: 000065108051<br>
+                            AGB-praktijkcode: 04900301
+                        </p>
+                    </div>
+
+                    <!-- Map Container -->
+                    <div class="map-wrapper">
+                        <div class="map-inner">
+                            <iframe 
+                                src="https://maps.google.com/maps?q=Healthy%20Bastards%20Zijlweg%20Zijweg%202%20Haarlem&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                                width="100%" 
+                                height="220" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade" 
+                                title="Locatie AlianzaFysio in Haarlem (Healthy Bastards)"
+                                class="google-map-iframe">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-form-wrapper fade-in-section">
+                    <div class="form-container-box">
+                        <h3 class="form-title">Maak een afspraak</h3>
+                        <p class="form-subtitle">Vul het formulier in en wij nemen spoedig contact met u op om uw zitting te plannen.</p>
+                        
+                        <form id="appointment-form" action="#" method="POST" novalidate>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="form-name" class="form-label">Volledige Naam *</label>
+                                    <input type="text" id="form-name" name="name" class="form-control" placeholder="Martijn de Vries" required>
+                                    <span class="error-msg" id="name-error">Vul a.u.b. uw naam in</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-phone" class="form-label">Telefoonnummer *</label>
+                                    <input type="tel" id="form-phone" name="phone" class="form-control" placeholder="+31 6 12345678" required>
+                                    <span class="error-msg" id="phone-error">Vul a.u.b. een geldig telefoonnummer in</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">E-mailadres *</label>
+                                <input type="email" id="form-email" name="email" class="form-control" placeholder="martijn@example.nl" required>
+                                <span class="error-msg" id="email-error">Vul a.u.b. een geldig e-mailadres in</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-service" class="form-label">Gewenste behandeling</label>
+                                <select id="form-service" name="service" class="form-control select-control">
+                                    <option value="algemene-fysiotherapie">Algemene fysiotherapie</option>
+                                    <option value="sportblessures">Sportblessures</option>
+                                    <option value="revalidatie-na-operatie">Revalidatie na operatie</option>
+                                    <option value="nek-rug-schouder">Nek-, rug- en schouderklachten</option>
+                                    <option value="knie-heup">Knie- en heupklachten</option>
+                                    <option value="dry-needling">Dry needling</option>
+                                    <option value="kaakklachten-tmj">Kaakklachten / TMJ</option>
+                                    <option value="oefentherapie-training">Oefentherapie en training</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Korte omschrijving van uw klachten (optioneel)</label>
+                                <textarea id="form-message" name="message" class="form-control textarea-control" rows="4" placeholder="Beschrijf hier kort uw klachten of revalidatiedoelen..."></textarea>
+                            </div>
+
+                            <div class="form-checkbox-group">
+                                <input type="checkbox" id="form-consent" name="consent" class="form-checkbox" required>
+                                <label for="form-consent" class="checkbox-label">
+                                    Ik ga akkoord met de verwerking van mijn gegevens conform de privacyverklaring. *
+                                </label>
+                            </div>
+                            <span class="error-msg" id="consent-error">U dient akkoord te gaan met de privacyverklaring om te verzenden</span>
+
+                            <button type="submit" class="btn btn-primary btn-submit">Verzenden</button>
+                        </form>
+
+                        <!-- Success Overlay Block -->
+                        <div class="form-success-overlay" id="form-success-overlay">
+                            <div class="success-content text-center">
+                                <div class="success-icon-wrap">
+                                    <svg viewBox="0 0 24 24" class="success-svg" xmlns="http://www.w3.org/2000/svg">
+                                        <polyline points="20 6 9 17 4 12" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                                    </svg>
+                                </div>
+                                <h3 class="success-title">Aanvraag ontvangen</h3>
+                                <p class="success-message">
+                                    Bedankt! Wij hebben uw aanvraag ontvangen en nemen binnen 24 uur contact met u op via telefoon of e-mail om uw afspraak te plannen.
+                                </p>
+                                <button class="btn btn-secondary btn-small" id="btn-reset-form">Nieuwe aanvraag verzenden</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-footer text-white">
+        <div class="container footer-container">
+            
+            <div class="footer-top-grid">
+                
+                <!-- Col 1: Logo & Statement -->
+                <div class="footer-col-brand">
+                    <div class="footer-logo-wrapper">
+                        <span class="logo-img-wrapper text-light">
+                            <img src="assets/logo-circle.jpg" alt="AlianzaFysio Logo" class="site-logo-img">
+                        </span>
+                    </div>
+                    <p class="footer-brand-statement">
+                        “Persoonlijke zorg. Evidence-based aanpak. Gericht op duurzaam herstel.”
+                    </p>
+                    
+                    <!-- Social Icons -->
+                    <div class="footer-social-wrapper">
+                        <a href="https://instagram.com/alianzafysio" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="AlianzaFysio Instagram">
+                            <svg viewBox="0 0 24 24" class="svg-social" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="#AEA896" stroke-width="1.8" fill="none"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="#AEA896" stroke-width="1.8" fill="none"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#AEA896" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/alianzafysio" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="AlianzaFysio LinkedIn">
+                            <svg viewBox="0 0 24 24" class="svg-social" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="#AEA896" stroke-width="1.8" fill="none"/>
+                                <rect x="2" y="9" width="4" height="12" stroke="#AEA896" stroke-width="1.8" fill="none"/>
+                                <circle cx="4" cy="4" r="2" fill="#AEA896"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div class="footer-col-nav">
+                    <h4 class="footer-col-title">Navigatie</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Over ons</a></li>
+                        <li><a href="#treatments">Behandelingen</a></li>
+                        <li><a href="#tarieven">Tarieven & tarieventabel</a></li>
+                        <li><a href="#vergoeding">Vergoeding & indicatie</a></li>
+                        <li><a href="#contact">Contact & boeking</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact details -->
+                <div class="footer-col-contact">
+                    <h4 class="footer-col-title">AlianzaFysio</h4>
+                    <p class="footer-contact-info">Zijlweg Zijweg 2</p>
+                    <p class="footer-contact-info">2015 BK Haarlem</p>
+                    <p class="footer-contact-info"><span class="footer-gym-note">(gevestigd in <a href="https://healthy-bastards.nl/" target="_blank" rel="noopener noreferrer">Healthy Bastards</a>)</span></p>
+                    <p class="footer-contact-info">E-mail: <a href="mailto:info@alianzafysio.com">info@alianzafysio.com</a></p>
+                    <p class="footer-contact-info" style="margin-top: 15px; font-size: 11px; opacity: 0.5; line-height: 1.5;">
+                        AGB-praktijkcode: 04900301<br>
+                        KvK-nummer: 42007289<br>
+                        Vestigingsnr: 000065108051
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Strip -->
+            <div class="footer-bottom-strip">
+                <p class="copyright-text">&copy; 2026 AlianzaFysio. Alle rechten voorbehouden.</p>
+                <div class="footer-legal-links">
+                    <a href="#privacy">Privacyverklaring</a>
+                    <a href="#klachten">Klachtenregeling</a>
+                    <a href="#voorwaarden">Algemene voorwaarden</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript script file -->
+    <script src="main.js"></script>
+</body>
+</html>
