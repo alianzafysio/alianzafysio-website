@@ -253,29 +253,29 @@ img {
 
 .logo-img-wrapper {
     display: block;
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-    overflow: hidden;
+    height: 70px;
+    width: 190px;
+    border-radius: 0;
+    overflow: visible;
     position: relative;
     transition: var(--transition-smooth);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: none;
 }
 
 .logo-img-wrapper .site-logo-img {
     height: 100%;
-    width: 100%;
-    object-fit: cover;
+    width: auto;
+    object-fit: contain;
     display: block;
-    transform: scale(1.12); /* Zoom in slightly to crop out the outer white sticker circumference */
+    transform: none;
     transform-origin: center;
     transition: var(--transition-smooth);
 }
 
 /* Scroll shrink transformation for header logo image wrapper */
 .header-scrolled .logo-img-wrapper {
-    height: 55px;
-    width: 55px;
+    eight: 55px;
+    width: 150px;
 }
 
 /* Light text variation for footer */
