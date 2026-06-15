@@ -253,8 +253,8 @@ img {
 
 .logo-img-wrapper {
     display: block;
-    height: 70px;
-    width: 190px;
+    height: 90px;
+    width: 260px;
     border-radius: 0;
     overflow: visible;
     position: relative;
@@ -274,8 +274,8 @@ img {
 
 /* Scroll shrink transformation for header logo image wrapper */
 .header-scrolled .logo-img-wrapper {
-    eight: 55px;
-    width: 150px;
+    eight: 75px;
+    width: 220px;
 }
 
 /* Light text variation for footer */
