@@ -285,10 +285,10 @@ img {
 }
 
 .logo-img-wrapper.text-light {
-    height: 90px;
-    width: 90px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    height: 120px;
+    width: 380px;
+    margin-bottom: 30px;
+    box-shadow: none;
 }
 
 /* Gym Link Details styling */
