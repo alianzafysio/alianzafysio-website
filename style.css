@@ -1988,3 +1988,8 @@ img {
 .legal-page a:hover {
     text-decoration: underline;
 }
+/* Emergency visibility fix */
+.fade-in-section {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
