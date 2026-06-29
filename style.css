@@ -2032,28 +2032,3 @@ img {
         gap: 14px 20px;
     }
 }
-/* FINAL FOOTER TEXT CONTRAST FIX */
-footer,
-footer p,
-footer li,
-footer span,
-footer address,
-footer .footer-contact,
-footer .footer-contact p,
-footer .footer-contact a,
-footer .footer-col,
-footer .footer-col p,
-footer .footer-col a {
-    color: rgba(244, 242, 238, 0.72) !important;
-}
-
-footer .footer-col h3,
-footer .footer-col h4,
-footer .footer-heading,
-footer strong {
-    color: #D5D1C7 !important;
-}
-
-footer a:hover {
-    color: #F4F2EE !important;
-}
