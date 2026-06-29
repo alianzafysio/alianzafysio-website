@@ -1941,3 +1941,50 @@ img {
         gap: 15px;
     }
 }
+/* =======================================================
+   Legal pages
+======================================================= */
+
+.legal-page {
+    background-color: var(--color-ivory);
+    padding: 120px 0;
+    min-height: 100vh;
+}
+
+.legal-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.legal-page h1 {
+    font-size: 44px;
+    margin-bottom: 35px;
+    color: var(--color-charcoal);
+    font-weight: 500;
+}
+
+.legal-page h2 {
+    font-size: 26px;
+    margin-top: 42px;
+    margin-bottom: 16px;
+    color: var(--color-sage);
+    font-weight: 500;
+}
+
+.legal-page p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--color-charcoal);
+    margin-bottom: 18px;
+}
+
+.legal-page a {
+    color: var(--color-sage);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.legal-page a:hover {
+    text-decoration: underline;
+}
