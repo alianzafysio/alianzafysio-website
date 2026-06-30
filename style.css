@@ -1530,8 +1530,10 @@ img {
     border-top: 1px solid rgba(255, 255, 255, 0.07);
     padding-top: 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 22px 40px;
 }
 
 .copyright-text {
