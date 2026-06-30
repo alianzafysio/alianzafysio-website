@@ -1517,13 +1517,18 @@ img {
 
 .footer-contact-info {
     font-size: 13px;
-    opacity: 0.65;
+    color: rgba(244, 242, 238, 0.82);
+    opacity: 1;
     margin-bottom: 10px;
 }
 
+.footer-contact-info a {
+    color: rgba(244, 242, 238, 0.82);
+    text-decoration: none;
+}
+
 .footer-contact-info a:hover {
-    color: var(--color-stone);
-    opacity: 1;
+    color: #F4F2EE;
 }
 
 .footer-bottom-strip {
