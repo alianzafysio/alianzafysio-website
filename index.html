@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlianzaFysio | Fysiotherapie Haarlem</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Persoonlijke fysiotherapie in Haarlem voor herstel, sportrevalidatie, pijnklachten en duurzame gezondheid. Gevestigd in Healthy Bastards aan de Zijlweg.">
-    <meta name="keywords" content="Fysiotherapie Haarlem, Fysio Haarlem, Sportrevalidatie Haarlem, Zijlweg fysiotherapie, AlianzaFysio, Dry needling Haarlem, TMJ kaakklachten, Knie heup revalidatie">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="AlianzaFysio">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://alianzafysio.com/">
-    <meta property="og:title" content="AlianzaFysio | Fysiotherapie Haarlem">
-    <meta property="og:description" content="Persoonlijke fysiotherapie gericht op duurzaam herstel en actieve revalidatie in Haarlem. Ervaar professionele zorg op maat.">
-    <meta property="og:image" content="assets/hero.jpg">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://alianzafysio.com/">
-    <meta property="twitter:title" content="AlianzaFysio | Fysiotherapie Haarlem">
-    <meta property="twitter:description" content="Persoonlijke fysiotherapie gericht op duurzaam herstel en actieve revalidatie in Haarlem. Ervaar professionele zorg op maat.">
-    <meta property="twitter:image" content="assets/hero.jpg">
+    <title>Fysiotherapeut Haarlem | AlianzaFysio aan de Zijlweg</title>
+    <meta name="description" content="Fysiotherapie in Haarlem voor pijnklachten, sportblessures, dry needling, kaakklachten en revalidatie. Persoonlijke zorg bij AlianzaFysio aan de Zijlweg.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="AlianzaFysio">
+    <meta name="theme-color" content="#5E6A5A">
+    <link rel="canonical" href="https://alianzafysio.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AlianzaFysio">
+    <meta property="og:url" content="https://alianzafysio.com/">
+    <meta property="og:title" content="Fysiotherapeut Haarlem | AlianzaFysio">
+    <meta property="og:description" content="Persoonlijke fysiotherapie in Haarlem voor pijnklachten, sportblessures, dry needling, kaakklachten en revalidatie.">
+    <meta property="og:image" content="https://alianzafysio.com/assets/entrance.jpg">
+    <meta property="og:image:alt" content="Entree van AlianzaFysio in Haarlem">
+
+    <!-- X / Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fysiotherapeut Haarlem | AlianzaFysio">
+    <meta name="twitter:description" content="Persoonlijke fysiotherapie in Haarlem voor pijnklachten, sportblessures, dry needling, kaakklachten en revalidatie.">
+    <meta name="twitter:image" content="https://alianzafysio.com/assets/entrance.jpg">
 
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,18 +35,34 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- Structured Data (Schema.org JSON-LD) -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@type": "Physiotherapy",
-      "name": "AlianzaFysio",
-      "image": "https://alianzafysio.com/assets/hero.jpg",
+      "@type": "WebSite",
       "@id": "https://alianzafysio.com/#website",
-      "url": "https://alianzafysio.com",
-      "telephone": "+31 643 054 477",
-      "priceRange": "$$",
+      "url": "https://alianzafysio.com/",
+      "name": "AlianzaFysio",
+      "alternateName": "Alianza Fysio",
+      "inLanguage": "nl-NL"
+    },
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://alianzafysio.com/#practice",
+      "name": "AlianzaFysio",
+      "url": "https://alianzafysio.com/",
+      "logo": "https://alianzafysio.com/assets/ALIANZATRA.png",
+      "image": "https://alianzafysio.com/assets/entrance.jpg",
+      "description": "Persoonlijke fysiotherapie in Haarlem voor pijnklachten, sportblessures, dry needling, kaakklachten en revalidatie.",
+      "medicalSpecialty": "https://schema.org/Physiotherapy",
+      "telephone": "+31643054477",
+      "email": "info@alianzafysio.com",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
       "address": {
+        "@type": "PostalAddress",
         "streetAddress": "Zijlweg Zijweg 2",
         "addressLocality": "Haarlem",
         "postalCode": "2015 BK",
@@ -52,28 +70,85 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 52.382410,
+        "latitude": 52.38241,
         "longitude": 4.626285
       },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=AlianzaFysio&query_place_id=ChIJa0cwXYLvxUcRX4wANtpyB-I",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Haarlem"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Kennemerland"
+        }
+      ],
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "dayOfWeek": [
+            "https://schema.org/Monday",
+            "https://schema.org/Tuesday",
+            "https://schema.org/Wednesday",
+            "https://schema.org/Thursday",
+            "https://schema.org/Friday"
+          ],
           "opens": "07:30",
           "closes": "21:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
+          "dayOfWeek": "https://schema.org/Saturday",
           "opens": "08:00",
           "closes": "12:30"
         }
       ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Algemene fysiotherapie"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sportrevalidatie"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Dry needling"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Behandeling van kaakklachten (TMJ)"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Revalidatie na operatie"
+          }
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/alianzafysio",
-        "https://www.linkedin.com/company/alianzafysio"
+        "https://www.linkedin.com/company/alianzafysio",
+        "https://share.google/H7OQ8NbBzpJ1rIaL1"
       ]
     }
+  ]
+}
     </script>
 </head>
 <body>
@@ -134,6 +209,7 @@
             
             <div class="container hero-container grid-2">
                 <div class="hero-content-wrapper fade-in-section">
+                    <span class="sub-headline hero-local-label">Fysiotherapie in Haarlem</span>
                     <h1 class="hero-title">
                         Beweeg beter.<br>
                         Voel u beter.<br>
