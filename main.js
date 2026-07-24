@@ -45,7 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    mobileNavToggle.addEventListener('click', toggleMobileNav);
+    if (mobileNavToggle && mobileNav) {
+        mobileNavToggle.addEventListener('click', toggleMobileNav);
+    }
 
     // Close mobile menu if a nav link is clicked
     mobileNavLinks.forEach(link => {
@@ -143,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Real-time input clearing of errors
-    appointmentForm.querySelectorAll('.form-control, .form-checkbox').forEach(input => {
+    if (appointmentForm) appointmentForm.querySelectorAll('.form-control, .form-checkbox').forEach(input => {
         input.addEventListener('input', () => {
             const group = input.closest('.form-group') || input.closest('.form-checkbox-group');
             const errorEl = group.querySelector('.error-msg') || document.getElementById('consent-error');
@@ -153,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    appointmentForm.addEventListener('submit', (e) => {
+    if (appointmentForm) appointmentForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
         let isValid = true;
@@ -216,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Reset Form button action
-    resetFormBtn.addEventListener('click', () => {
+    if (resetFormBtn && appointmentForm && successOverlay) resetFormBtn.addEventListener('click', () => {
         appointmentForm.reset();
         successOverlay.classList.remove('show-success');
         
