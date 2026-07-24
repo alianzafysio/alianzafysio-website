@@ -1,39 +1,225 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://alianzafysio.com/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://alianzafysio.com/privacy.html</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.2</priority>
-    </url>
-    <url>
-        <loc>https://alianzafysio.com/cookiebeleid.html</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.2</priority>
-    </url>
-    <url>
-        <loc>https://alianzafysio.com/algemene-voorwaarden.html</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.2</priority>
-    </url>
-    <url>
-        <loc>https://alianzafysio.com/klachtenregeling.html</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.2</priority>
-    </url>
-    <url>
-        <loc>https://alianzafysio.com/disclaimer.html</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.2</priority>
-    </url>
-    <url>
-        <loc>https://alianzafysio.com/dry-needling-haarlem.html</loc>
-        <lastmod>2026-07-24</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-</urlset>
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NNTEJQRNDR"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NNTEJQRNDR');
+    </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rugpijn Haarlem | Onderzoek en fysiotherapie | AlianzaFysio</title>
+<meta content="Rugpijn in Haarlem? AlianzaFysio onderzoekt of uw klacht vooral spier-, gewrichts- of zenuwgerelateerd is en maakt een persoonlijk behandelplan." name="description"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="AlianzaFysio" name="author"/>
+<meta content="#5E6A5A" name="theme-color"/>
+<link href="https://alianzafysio.com/rugpijn-haarlem.html" rel="canonical"/>
+<meta content="nl_NL" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="AlianzaFysio" property="og:site_name"/>
+<meta content="https://alianzafysio.com/dry-needling-haarlem.html" property="og:url"/>
+<meta content="Rugpijn Haarlem | AlianzaFysio" property="og:title"/>
+<meta content="Begrijp uw rugklacht en werk gericht aan herstel met persoonlijke fysiotherapie in Haarlem." property="og:description"/>
+<meta content="https://alianzafysio.com/assets/illustrations/rugpijn-hero.svg" property="og:image"/>
+<meta content="Dry needling behandeling bij AlianzaFysio in Haarlem" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Rugpijn Haarlem | AlianzaFysio" name="twitter:title"/>
+<meta content="Persoonlijke fysiotherapie voor rugpijn in Haarlem: onderzoek, uitleg en een actief behandelplan." name="twitter:description"/>
+<meta content="https://alianzafysio.com/assets/photo-b.jpg" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://alianzafysio.com/rugpijn-haarlem.html#webpage",
+      "url": "https://alianzafysio.com/rugpijn-haarlem.html",
+      "name": "Rugpijn Haarlem",
+      "description": "Patiëntinformatie over rugpijn, onderzoek en fysiotherapeutische behandeling in Haarlem.",
+      "inLanguage": "nl-NL",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Lage rugpijn"
+      },
+      "publisher": {
+        "@id": "https://alianzafysio.com/#practice"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://alianzafysio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rugpijn Haarlem",
+          "item": "https://alianzafysio.com/rugpijn-haarlem.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Moet ik rust houden bij rugpijn?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Meestal is rustig blijven bewegen beter dan langdurige bedrust. Pas belasting tijdelijk aan en bouw activiteit geleidelijk op."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Heb ik een MRI nodig bij rugpijn?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bij gewone lage rugpijn is beeldvorming meestal niet nodig. Een arts kan beeldvorming overwegen bij aanwijzingen voor een specifieke oorzaak of wanneer de uitslag het beleid verandert."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan fysiotherapie helpen bij een hernia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Veel mensen met een hernia herstellen zonder operatie. Fysiotherapie kan ondersteunen met uitleg, geleidelijke belasting, oefeningen en monitoring van neurologische verschijnselen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoeveel behandelingen heb ik nodig?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dat hangt af van klachtenduur, beperkingen, hersteltempo en doelen. Na het onderzoek bespreken we een realistische eerste behandelperiode en evaluatiemoment."
+          }
+        }
+      ]
+    }
+  ]
+}</script></head>
+<body class="treatment-detail-page">
+<header class="site-header" id="site-header">
+<div class="header-container container">
+<a aria-label="AlianzaFysio homepage" class="logo-link" href="index.html#home"><span class="logo-img-wrapper"><img alt="AlianzaFysio logo" class="site-logo-img" src="assets/ALIANZATRA.png"/></span></a>
+<nav aria-label="Hoofdnavigatie" class="desktop-nav"><ul class="nav-list">
+<li><a class="nav-link" href="rugpijn-haarlem.html">Rugpijn</a></li><li><a class="nav-link" href="index.html#home">Home</a></li><li><a class="nav-link" href="index.html#about">Over ons</a></li><li><a class="nav-link active-link" href="index.html#treatments">Behandelingen</a></li><li><a class="nav-link" href="index.html#tarieven">Tarieven</a></li><li><a class="nav-link" href="index.html#vergoeding">Vergoeding</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+</ul></nav>
+<div class="header-cta"><a class="btn btn-header" href="index.html#contact">Afspraak maken</a></div>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Menu openen" class="mobile-nav-toggle"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+</div>
+</header>
+<nav aria-hidden="true" aria-label="Mobiele navigatie" class="mobile-nav" id="mobile-nav"><ul class="mobile-nav-list">
+<li><a class="mobile-nav-link" href="rugpijn-haarlem.html">Rugpijn</a></li><li><a class="mobile-nav-link" href="index.html#home">Home</a></li><li><a class="mobile-nav-link" href="index.html#about">Over ons</a></li><li><a class="mobile-nav-link" href="index.html#treatments">Behandelingen</a></li><li><a class="mobile-nav-link" href="index.html#tarieven">Tarieven</a></li><li><a class="mobile-nav-link" href="index.html#vergoeding">Vergoeding</a></li><li><a class="mobile-nav-link" href="index.html#contact">Contact</a></li><li><a class="btn btn-mobile-cta" href="index.html#contact">Afspraak maken</a></li>
+</ul></nav>
+<main>
+<section class="detail-hero rug-hero"><div class="container detail-hero-grid"><div class="detail-hero-copy fade-in-section"><nav aria-label="Broodkruimel" class="detail-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Rugpijn Haarlem</span></nav><span class="sub-headline">Fysiotherapie voor rugklachten</span><h1>Rugpijn in Haarlem</h1><p class="detail-lead">Niet alle rugpijn is hetzelfde. Daarom starten wij niet met een standaardbehandeling, maar met een zorgvuldig onderzoek naar de belangrijkste factoren achter uw klacht.</p><div class="detail-actions"><a class="btn btn-primary" href="index.html#contact">Afspraak maken</a><a class="btn btn-secondary" href="#onderzoek">Onze aanpak</a></div></div><div class="detail-hero-image fade-in-section"><img alt="Minimalistische illustratie van de lage rug met spieren, gewrichten en zenuwen" height="720" src="assets/illustrations/rugpijn-hero.svg" width="900"/></div></div></section>
+<section class="detail-trust"><div class="container detail-trust-grid"><span>Geen verwijzing nodig</span><span>Contracten met alle zorgverzekeraars</span><span>Onderzoek vóór behandeling</span><span>Actief en persoonlijk herstelplan</span></div></section>
+<section class="detail-content"><div class="container detail-layout"><aside class="detail-toc"><p class="detail-toc-title">Op deze pagina</p><a href="#wat-is-rugpijn">Wat is rugpijn?</a><a href="#bronnen">Mogelijke bronnen</a><a href="#hulp">Wanneer hulp zoeken?</a><a href="#onderzoek">Ons onderzoek</a><a href="#behandeling">Behandeling</a><a href="#mri">MRI: wel of niet?</a><a href="#prognose">Herstel en prognose</a><a href="#faq">Veelgestelde vragen</a></aside>
+<article>
+<section class="detail-block" id="wat-is-rugpijn"><span class="detail-kicker">Begrijp uw klacht</span><h2>Wat is rugpijn?</h2><p>Rugpijn is een verzamelnaam voor pijn, stijfheid of bewegingsbeperking in de rug. De klacht kan lokaal blijven, maar ook uitstralen naar bil of been. Soms ontstaan tintelingen, een doof gevoel of krachtsverlies. De intensiteit van pijn vertelt niet automatisch hoeveel schade er aanwezig is: slaap, stress, belasting, conditie, verwachtingen en eerdere ervaringen kunnen allemaal invloed hebben op hoe de klacht wordt ervaren.</p><p>Bij veel mensen is geen enkele structuur als dé oorzaak aan te wijzen. Dat noemen we aspecifieke lage rugpijn. Dit betekent niet dat de klacht niet echt is. Het betekent dat herstel meestal het beste wordt gestuurd door functie, belastbaarheid en het klachtenpatroon te beoordelen, in plaats van alleen naar één anatomische afwijking te zoeken.</p><div class="detail-highlight"><strong>Belangrijk:</strong> rugpijn betekent zelden dat uw rug “versleten” of kwetsbaar is. Een veilige, geleidelijke terugkeer naar bewegen en dagelijkse activiteiten is vaak een belangrijk onderdeel van herstel.</div></section>
+<section class="detail-block" id="bronnen"><span class="detail-kicker">Klinisch redeneren</span><h2>Waar kan rugpijn vandaan komen?</h2><p>Spieren, gewrichten en zenuwen kunnen vergelijkbare klachten geven. Tijdens het onderzoek zoeken we daarom niet naar een snelle etikettering, maar naar het patroon dat het beste aansluit bij uw klachten en beperkingen.</p><div class="pain-source-grid"><article class="pain-source-card"><img alt="Illustratie van spiergerelateerde rugpijn" loading="lazy" src="assets/illustrations/myogeen.svg"/><div><h3>Myogeen: spieren en belasting</h3><p>Spiergerelateerde klachten kunnen ontstaan na een plotselinge inspanning, langdurig dezelfde houding, vermoeidheid of een verandering in trainingsbelasting. De pijn is vaak lokaal en kan gevoelig zijn bij aanspannen of drukken.</p></div></article><article class="pain-source-card"><img alt="Illustratie van gewrichtsgerelateerde rugpijn" loading="lazy" src="assets/illustrations/arthrogeen.svg"/><div><h3>Arthrogeen: gewrichten en beweging</h3><p>Gewrichten in de lage rug of het bekken kunnen bijdragen aan pijn en stijfheid. Het patroon kan veranderen bij draaien, strekken, lang staan of na een periode van inactiviteit.</p></div></article><article class="pain-source-card"><img alt="Illustratie van zenuwgerelateerde rugpijn" loading="lazy" src="assets/illustrations/neurogeen.svg"/><div><h3>Neurogeen: zenuw en uitstraling</h3><p>Prikkeling van een zenuwwortel kan pijn in het been, tintelingen, gevoelsverandering of krachtsverlies veroorzaken. De plaats van rugpijn alleen is onvoldoende om dit vast te stellen; neurologisch onderzoek is dan belangrijk.</p></div></article></div><div class="detail-philosophy"><span>De AlianzaFysio-aanpak</span><h3>De bron is niet altijd één structuur</h3><p>Rugklachten zijn vaak een combinatie van gevoelig weefsel, veranderde belasting, beschermend bewegen en verminderde belastbaarheid. Daarom stemmen we de behandeling af op het hele klinische beeld.</p></div></section>
+<section class="detail-block" id="hulp"><span class="detail-kicker">Veilige keuzes</span><h2>Wanneer hulp zoeken?</h2><div class="detail-grid-2"><div class="detail-info-card"><h3>Een afspraak bij de fysiotherapeut</h3><p>Overweeg onderzoek wanneer de pijn uw werk, slaap, sport of dagelijkse activiteiten beperkt; wanneer klachten terugkeren; wanneer u onzeker bent over bewegen; of wanneer herstel uitblijft ondanks aanpassing van belasting.</p></div><div class="detail-info-card urgent-card"><h3>Neem direct medisch contact op</h3><p>Zoek spoedig medische hulp bij nieuw verlies van controle over blaas of darmen, gevoelloosheid rond kruis of zitvlak, snel toenemend krachtsverlies, ernstige rugpijn na groot trauma, of rugpijn met koorts en duidelijke ziekteverschijnselen.</p></div></div><p>Andere signalen, zoals onverklaard gewichtsverlies, een voorgeschiedenis met kanker, langdurig corticosteroïdgebruik of pijn die sterk progressief is, vragen eveneens om beoordeling door huisarts of specialist. Eén signaal betekent niet automatisch dat er iets ernstigs speelt, maar de combinatie en het beloop zijn belangrijk.</p></section>
+<section class="detail-block" id="onderzoek"><span class="detail-kicker">Eerste afspraak</span><h2>Hoe onderzoeken wij rugpijn?</h2><p>We beginnen met uw verhaal: wanneer ontstonden de klachten, wat beïnvloedt ze, welke activiteiten zijn moeilijk en wat wilt u weer kunnen? Vervolgens kiezen we alleen de tests die voor uw klachtenpatroon relevant zijn.</p><ol class="detail-timeline"><li><span>01</span><div><h3>Vraaggesprek en screening</h3><p>We bespreken klachtenverloop, gezondheid, belasting, slaap, werk, sport, eerdere episodes en signalen die aanvullende medische beoordeling kunnen vragen.</p></div></li><li><span>02</span><div><h3>Bewegings- en functieonderzoek</h3><p>We bekijken relevante bewegingen, houdingen, kracht, coördinatie en activiteiten die uw klachten uitlokken of juist verminderen.</p></div></li><li><span>03</span><div><h3>Neurologisch onderzoek indien nodig</h3><p>Bij uitstraling, tintelingen of krachtsverandering testen we onder meer spierkracht, gevoel, reflexen en mechanische gevoeligheid van zenuwweefsel.</p></div></li><li><span>04</span><div><h3>Uitleg en gezamenlijk plan</h3><p>U krijgt een begrijpelijke werkhypothese, realistische verwachtingen en een plan dat past bij uw doelen en beschikbare tijd.</p></div></li></ol></section>
+<section class="detail-block" id="behandeling"><span class="detail-kicker">Persoonlijk behandelplan</span><h2>Behandeling van rugpijn</h2><p>Een effectieve behandeling is meestal actief en doelgericht. We kiezen interventies op basis van uw onderzoek, niet omdat één techniek bij iedereen zou werken.</p><div class="detail-condition-list"><div><h3>Uitleg en zelfmanagement</h3><p>Begrijpen wat veilig is, hoe u belasting doseert en hoe u reageert op een tijdelijke toename van pijn.</p></div><div><h3>Oefentherapie</h3><p>Gericht op mobiliteit, kracht, uithoudingsvermogen, controle en vertrouwen in dagelijkse of sportieve bewegingen.</p></div><div><h3>Hands-on technieken</h3><p>Kunnen tijdelijk helpen om pijn of stijfheid te verminderen en beweging makkelijker te maken, altijd gekoppeld aan actief herstel.</p></div><div><h3>Dry needling wanneer passend</h3><p>Bij een relevante spiercomponent kan dry needling ondersteunend zijn. Lees meer op onze <a href="dry-needling-haarlem.html">pagina over dry needling in Haarlem</a>.</p></div><div><h3>Opbouw van werk en sport</h3><p>We vertalen oefeningen naar tillen, zitten, hardlopen, krachttraining of andere activiteiten die voor u belangrijk zijn.</p></div><div><h3>Evaluatie</h3><p>We volgen niet alleen pijn, maar ook functie, vertrouwen en deelname. Als herstel anders verloopt dan verwacht, heroverwegen we de aanpak.</p></div></div></section>
+<section class="detail-block" id="mri"><span class="detail-kicker">Beeldvorming</span><h2>Heb ik een MRI nodig?</h2><p>Bij aspecifieke lage rugpijn wordt routinematige beeldvorming niet aanbevolen. MRI-beelden laten regelmatig veranderingen zien bij mensen zonder pijn, zoals discusuitstulpingen of tekenen van slijtage. Zo’n bevinding moet daarom altijd worden geïnterpreteerd naast uw verhaal en lichamelijk onderzoek.</p><p>Een MRI kan wél zinvol zijn wanneer er aanwijzingen zijn voor een specifieke aandoening, bij progressieve neurologische uitval, of wanneer de uitslag naar verwachting invloed heeft op een medische beslissing. De huisarts of specialist bepaalt of en wanneer beeldvorming nodig is.</p><div class="detail-highlight"><strong>Ons uitgangspunt:</strong> niet “een scan om zekerheid te krijgen”, maar eerst bepalen welke informatie nodig is om de juiste zorgbeslissing te nemen.</div></section>
+<section class="detail-block" id="prognose"><span class="detail-kicker">Herstel</span><h2>Hoe lang duurt herstel?</h2><p>Het hersteltempo verschilt per persoon. Veel nieuwe episodes verbeteren in de eerste weken, maar schommelingen zijn normaal. Bij langdurige of terugkerende klachten duurt het vaak langer om belastbaarheid, vertrouwen en deelname volledig op te bouwen.</p><div class="detail-grid-2"><div class="detail-mini-card"><strong>Nieuwe episode</strong><span>Focus op geruststelling, blijven bewegen en tijdelijke aanpassing van belasting.</span></div><div class="detail-mini-card"><strong>Terugkerende klachten</strong><span>Zoek naar patronen in belasting, herstel, werk, sport en eerdere strategieën.</span></div><div class="detail-mini-card"><strong>Uitstraling naar het been</strong><span>Controleer neurologische functie en volg veranderingen in pijn, gevoel en kracht.</span></div><div class="detail-mini-card"><strong>Langdurige rugpijn</strong><span>Werk stapsgewijs aan functie, conditie, vertrouwen en betekenisvolle doelen.</span></div></div><p>We spreken vroeg af wanneer we evalueren. Zo weet u of het plan effect heeft en wanneer aanpassing of overleg met de huisarts passend is.</p></section>
+<section class="detail-block" id="faq"><span class="detail-kicker">Veelgestelde vragen</span><h2>Veelgestelde vragen over rugpijn</h2><div class="detail-faq"><details><summary>1. Moet ik rust houden bij rugpijn?</summary><p>Langdurige bedrust wordt meestal afgeraden. Rustig blijven bewegen en activiteiten tijdelijk aanpassen helpt doorgaans beter. Een korte pauze kan prettig zijn, maar probeer regelmatig van houding te wisselen.</p></details><details><summary>2. Is wandelen goed voor rugpijn?</summary><p>Voor veel mensen is wandelen een geschikte manier om actief te blijven. Begin met een haalbare duur en bouw geleidelijk op. De reactie in de uren erna is belangrijker dan een tijdelijke lichte toename tijdens het lopen.</p></details><details><summary>3. Mag ik werken met rugpijn?</summary><p>Vaak wel, eventueel met tijdelijke aanpassingen in duur, houding, tillen of pauzes. Volledig stoppen is niet altijd nodig. We kunnen helpen een realistische opbouw te maken.</p></details><details><summary>4. Heb ik een MRI nodig?</summary><p>Meestal niet bij gewone lage rugpijn. Beeldvorming wordt vooral overwogen wanneer er aanwijzingen zijn voor een specifieke oorzaak of wanneer de uitslag een medische beslissing kan veranderen.</p></details><details><summary>5. Kan fysiotherapie helpen bij een hernia?</summary><p>Veel mensen met een hernia herstellen zonder operatie. Fysiotherapie kan helpen bij bewegen, opbouw van belasting, uitleg en het volgen van neurologische symptomen. Bij toenemend krachtsverlies is medische beoordeling belangrijk.</p></details><details><summary>6. Kan dry needling helpen?</summary><p>Wanneer spieren duidelijk bijdragen aan de klacht, kan dry needling tijdelijk pijn of spanning verminderen. Het wordt bij AlianzaFysio alleen gebruikt als onderdeel van een breder actief behandelplan.</p></details><details><summary>7. Hoeveel sessies heb ik nodig?</summary><p>Dat hangt af van klachtenduur, beperkingen, hersteltempo en doelen. Na het eerste onderzoek bespreken we een eerste behandelperiode en een duidelijk evaluatiemoment.</p></details><details><summary>8. Betekent pijn dat ik schade maak?</summary><p>Niet automatisch. Pijn is een beschermend signaal en kan gevoeliger worden door meerdere factoren. We helpen u onderscheid te maken tussen normale reacties op opbouw en signalen die aanpassing vragen.</p></details><details><summary>9. Komt rugpijn vaak terug?</summary><p>Terugkerende episodes komen voor. Dat betekent niet dat uw rug zwak is. Herkennen van vroege signalen, actief blijven en een passend plan voor belasting kunnen helpen om toekomstige episodes beter op te vangen.</p></details><details><summary>10. Heb ik een verwijzing nodig?</summary><p>Meestal niet. U kunt doorgaans rechtstreeks een afspraak maken via Directe Toegankelijkheid Fysiotherapie. Wanneer medische beoordeling nodig is, adviseren wij contact met uw huisarts.</p></details></div><p class="source-note">Patiëntinformatie gebaseerd op Nederlandse eerstelijnsadviezen, waaronder de NHG-Standaard Aspecifieke lagerugpijn. Deze pagina vervangt geen individuele medische beoordeling.</p></section>
+</article></div></section>
+<section class="detail-final-cta"><div class="container detail-final-cta-inner"><div><span class="sub-headline">Rugpijn fysiotherapie Haarlem</span><h2>Wilt u weer vrijer bewegen?</h2><p>Plan een afspraak voor een zorgvuldig onderzoek, duidelijke uitleg en een persoonlijk herstelplan.</p></div><div class="detail-actions"><a class="btn btn-primary" href="index.html#contact">Afspraak maken</a><a class="btn btn-secondary" href="tel:+31643054477">Bel +31 6 43054477</a></div></div></section>
+</main>
+<footer class="site-footer bg-footer text-white">
+<div class="container footer-container">
+<div class="footer-top-grid">
+<!-- Col 1: Logo & Statement -->
+<div class="footer-col-brand">
+<div class="footer-logo-wrapper footer-logos">
+<span class="logo-img-wrapper text-light">
+<img alt="AlianzaFysio Logo" class="site-logo-img" src="assets/ALIANZATRA.png"/>
+</span>
+<a href="https://healthybastards.nl" target="_blank">
+<img alt="Healthy Bastards" class="site-logo-img hb-logo" src="assets/hb.jpg"/>
+</a>
+</div>
+<p class="footer-brand-statement">
+        “Persoonlijke zorg. Evidence-based aanpak. Gericht op duurzaam herstel.”
+    </p>
+</div>
+<!-- Social Icons -->
+<div class="footer-social-wrapper">
+<a aria-label="AlianzaFysio Instagram" class="social-icon-link" href="https://instagram.com/alianzafysio" rel="noopener noreferrer" target="_blank">
+<svg class="svg-social" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect fill="none" height="20" rx="5" ry="5" stroke="#AEA896" stroke-width="1.8" width="20" x="2" y="2"></rect>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="#AEA896" stroke-width="1.8"></path>
+<line stroke="#AEA896" stroke-linecap="round" stroke-width="2" x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+</svg>
+</a>
+<a aria-label="AlianzaFysio LinkedIn" class="social-icon-link" href="https://linkedin.com/company/alianzafysio" rel="noopener noreferrer" target="_blank">
+<svg class="svg-social" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" fill="none" stroke="#AEA896" stroke-width="1.8"></path>
+<rect fill="none" height="12" stroke="#AEA896" stroke-width="1.8" width="4" x="2" y="9"></rect>
+<circle cx="4" cy="4" fill="#AEA896" r="2"></circle>
+</svg>
+</a>
+</div>
+</div>
+<!-- Col 2: Navigation Links -->
+<div class="footer-col-nav">
+<h4 class="footer-col-title">Navigatie</h4>
+<ul class="footer-links-list">
+<li><a href="index.html#home">Home</a></li>
+<li><a href="rugpijn-haarlem.html">Rugpijn Haarlem</a></li><li><a href="index.html#about">Over ons</a></li>
+<li><a href="index.html#treatments">Behandelingen</a></li>
+<li><a href="dry-needling-haarlem.html">Dry needling Haarlem</a></li>
+<li><a href="index.html#tarieven">Tarieven &amp; tarieventabel</a></li>
+<li><a href="index.html#vergoeding">Vergoeding &amp; indicatie</a></li>
+<li><a href="index.html#contact">Contact &amp; boeking</a></li>
+</ul>
+</div>
+<!-- Col 3: Contact details -->
+<div class="footer-col-contact">
+<h4 class="footer-col-title">AlianzaFysio</h4>
+<p class="footer-contact-info">Zijlweg Zijweg 2</p>
+<p class="footer-contact-info">2015 BK Haarlem</p>
+<p class="footer-contact-info"><span class="footer-gym-note">(gevestigd in <a href="https://healthy-bastards.nl/" rel="noopener noreferrer" target="_blank">Healthy Bastards</a>)</span></p>
+<p class="footer-contact-info">E-mail: <a href="mailto:info@alianzafysio.com">info@alianzafysio.com</a></p>
+<p class="footer-contact-info" style="margin-top: 15px; font-size: 11px; opacity: 0.5; line-height: 1.5;">
+                        AGB-praktijkcode: 04900301<br/>
+                        KvK-nummer: 42007289<br/>
+                        Vestigingsnr: 000065108051
+                    </p>
+</div>
+</div>
+<div class="footer-bottom-strip">
+<p class="copyright-text">© 2026 AlianzaFysio. Alle rechten voorbehouden.</p>
+<div class="footer-legal-links">
+<a href="privacy.html">Privacyverklaring</a>
+<a href="cookiebeleid.html">Cookiebeleid</a>
+<a href="algemene-voorwaarden.html">Algemene voorwaarden</a>
+<a href="klachtenregeling.html">Klachtenregeling</a>
+<a href="disclaimer.html">Disclaimer</a>
+</div>
+</div>
+
+</footer>
+<!-- Floating WhatsApp button -->
+<a aria-label="Neem contact op met AlianzaFysio via WhatsApp" class="whatsapp-button" href="https://wa.me/31643054477?text=Hallo%20AlianzaFysio%2C%20ik%20wil%20graag%20een%20afspraak%20maken." rel="noopener noreferrer" target="_blank" title="WhatsApp ons">
+<svg aria-hidden="true" focusable="false" viewbox="0 0 32 32">
+<path d="M16.04 3C8.86 3 3.02 8.71 3.02 15.75c0 2.25.6 4.45 1.74 6.37L3 29l7.08-1.81a13.2 13.2 0 0 0 5.95 1.43h.01c7.17 0 13.01-5.72 13.01-12.76C29.05 8.72 23.22 3 16.04 3Zm0 23.46h-.01a11 11 0 0 1-5.59-1.5l-.4-.24-4.2 1.08 1.12-4.01-.26-.41a10.5 10.5 0 0 1-1.63-5.63c0-5.85 4.92-10.61 10.98-10.61 6.05 0 10.97 4.76 10.97 10.62 0 5.85-4.92 10.7-10.98 10.7Zm6.02-7.94c-.33-.16-1.95-.94-2.25-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.26-.19.21-.38.24-.71.08-.33-.16-1.39-.5-2.65-1.59-.98-.85-1.64-1.9-1.83-2.22-.19-.32-.02-.49.14-.65.15-.14.33-.37.49-.56.16-.19.22-.32.33-.53.11-.21.05-.4-.03-.56-.08-.16-.74-1.73-1.01-2.37-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.4-.3.32-1.15 1.1-1.15 2.69 0 1.58 1.18 3.11 1.34 3.32.16.21 2.32 3.47 5.63 4.87.79.33 1.4.53 1.88.68.79.24 1.5.21 2.07.13.63-.09 1.95-.78 2.22-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.63-.37Z"></path>
+</svg>
+<span class="whatsapp-tooltip">WhatsApp ons</span>
+</a>
+<script src="main.js"></script>
+</body>
+</html>
