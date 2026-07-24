@@ -1,225 +1,2394 @@
-<!DOCTYPE html>
+/* -------------------------------------------------------------
+   ALIANZA FYSIO - PREMIUM STYLING
+   Brand Guidelines: Style: Minimal, Editorial, Calm, Refined
+   ------------------------------------------------------------- */
 
-<html lang="nl">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NNTEJQRNDR"></script>
-<script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-NNTEJQRNDR');
-    </script>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Rugpijn Haarlem | Onderzoek en fysiotherapie | AlianzaFysio</title>
-<meta content="Rugpijn in Haarlem? AlianzaFysio onderzoekt of uw klacht vooral spier-, gewrichts- of zenuwgerelateerd is en maakt een persoonlijk behandelplan." name="description"/>
-<meta content="index, follow, max-image-preview:large" name="robots"/>
-<meta content="AlianzaFysio" name="author"/>
-<meta content="#5E6A5A" name="theme-color"/>
-<link href="https://alianzafysio.com/rugpijn-haarlem.html" rel="canonical"/>
-<meta content="nl_NL" property="og:locale"/>
-<meta content="article" property="og:type"/>
-<meta content="AlianzaFysio" property="og:site_name"/>
-<meta content="https://alianzafysio.com/dry-needling-haarlem.html" property="og:url"/>
-<meta content="Rugpijn Haarlem | AlianzaFysio" property="og:title"/>
-<meta content="Begrijp uw rugklacht en werk gericht aan herstel met persoonlijke fysiotherapie in Haarlem." property="og:description"/>
-<meta content="https://alianzafysio.com/assets/illustrations/rugpijn-hero.svg" property="og:image"/>
-<meta content="Dry needling behandeling bij AlianzaFysio in Haarlem" property="og:image:alt"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Rugpijn Haarlem | AlianzaFysio" name="twitter:title"/>
-<meta content="Persoonlijke fysiotherapie voor rugpijn in Haarlem: onderzoek, uitleg en een actief behandelplan." name="twitter:description"/>
-<meta content="https://alianzafysio.com/assets/photo-b.jpg" name="twitter:image"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
+/* 1. Design Tokens & CSS Variables */
+:root {
+    /* Color Palette */
+    --color-sage: #5E6A5A;         /* Primary Accent */
+    --color-sage-dark: #4E584C;    /* Hover State for Sage */
+    --color-sage-light: #7B8B77;   /* Soft Sage Accent */
+    --color-charcoal: #162328;     /* Body Text / Headers / Dark Backgrounds */
+    --color-charcoal-light: #23373F; 
+    --color-stone: #AEA896;        /* Borders / Dividers / Secondary details */
+    --color-stone-light: #D5D1C7;
+    --color-ivory: #F4F2EE;        /* Base Background */
+    --color-teal: #2F4F4F;         /* Muted Dark Teal */
+    --color-white: #FFFFFF;
+    --color-error: #B22222;        /* Elegant Dark Red for Errors */
+    
+    /* Typography */
+    --font-sans: 'Montserrat', sans-serif;
+    
+    /* Layout Spacing */
+    --container-width: 1200px;
+    --header-height: 110px;
+    --header-height-shrink: 85px;
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    --transition-fast: all 0.2s ease;
+}
 
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "MedicalWebPage",
-      "@id": "https://alianzafysio.com/rugpijn-haarlem.html#webpage",
-      "url": "https://alianzafysio.com/rugpijn-haarlem.html",
-      "name": "Rugpijn Haarlem",
-      "description": "Patiëntinformatie over rugpijn, onderzoek en fysiotherapeutische behandeling in Haarlem.",
-      "inLanguage": "nl-NL",
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "Lage rugpijn"
-      },
-      "publisher": {
-        "@id": "https://alianzafysio.com/#practice"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://alianzafysio.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Rugpijn Haarlem",
-          "item": "https://alianzafysio.com/rugpijn-haarlem.html"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Moet ik rust houden bij rugpijn?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Meestal is rustig blijven bewegen beter dan langdurige bedrust. Pas belasting tijdelijk aan en bouw activiteit geleidelijk op."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Heb ik een MRI nodig bij rugpijn?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Bij gewone lage rugpijn is beeldvorming meestal niet nodig. Een arts kan beeldvorming overwegen bij aanwijzingen voor een specifieke oorzaak of wanneer de uitslag het beleid verandert."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Kan fysiotherapie helpen bij een hernia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Veel mensen met een hernia herstellen zonder operatie. Fysiotherapie kan ondersteunen met uitleg, geleidelijke belasting, oefeningen en monitoring van neurologische verschijnselen."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Hoeveel behandelingen heb ik nodig?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dat hangt af van klachtenduur, beperkingen, hersteltempo en doelen. Na het onderzoek bespreken we een realistische eerste behandelperiode en evaluatiemoment."
-          }
-        }
-      ]
+/* 2. Global Resets & Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    line-height: 1.65;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* Focus styles for Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--color-sage);
+    outline-offset: 4px;
+}
+
+/* Typography Details */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-charcoal);
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--color-charcoal);
+    opacity: 0.9;
+}
+
+p.text-muted {
+    opacity: 0.65;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Utility Containers */
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-padding-double {
+    padding: 120px 0;
+}
+
+.bg-white-contrast {
+    background-color: var(--color-white);
+}
+
+.bg-charcoal {
+    background-color: var(--color-charcoal);
+}
+
+.text-white {
+    color: var(--color-white) !important;
+}
+
+.text-stone {
+    color: var(--color-stone) !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Section Header Typography Layout */
+.section-header {
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+}
+
+.sub-headline {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: var(--color-sage);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.section-description {
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+/* Grids */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Scroll Animation Hooks */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 3. Header Styling */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: rgba(244, 242, 238, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(174, 168, 150, 0.15);
+    z-index: 100;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+}
+
+/* Shrink header state triggered by JS */
+.site-header.header-scrolled {
+    height: var(--header-height-shrink);
+    background-color: rgba(244, 242, 238, 0.95);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+/* Unified Vector Logo Styling */
+.site-logo-svg {
+    width: 105px;
+    height: auto;
+    display: block;
+    color: var(--color-charcoal);
+    transition: var(--transition-smooth);
+}
+
+/* Scroll shrink transformation for header logo */
+.header-scrolled .site-logo-svg {
+    width: 80px;
+}
+
+.logo-img-wrapper {
+    display: block;
+    height: 100px;
+    width: 300px;
+    border-radius: 0;
+    overflow: visible;
+    position: relative;
+    transition: var(--transition-smooth);
+    box-shadow: none;
+}
+
+.logo-img-wrapper .site-logo-img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    transform: none;
+    transform-origin: center;
+    transition: var(--transition-smooth);
+}
+
+/* Scroll shrink transformation for header logo image wrapper */
+.header-scrolled .logo-img-wrapper {
+    eight: 75px;
+    width: 220px;
+}
+
+/* Light text variation for footer */
+.site-logo-svg.text-light {
+    width: 150px;
+    color: var(--color-ivory);
+}
+
+.logo-img-wrapper.text-light {
+    height: 120px;
+    width: 380px;
+    margin-bottom: 30px;
+    box-shadow: none;
+}
+
+/* Gym Link Details styling */
+.location-context {
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.85;
+    display: block;
+    margin-top: 8px;
+}
+
+.gym-link {
+    color: var(--color-sage);
+    font-weight: 500;
+    text-decoration: underline;
+    transition: var(--transition-fast);
+}
+
+.gym-link:hover {
+    color: var(--color-charcoal);
+}
+
+.footer-gym-note {
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 8px;
+    display: block;
+}
+
+.footer-gym-note a {
+    text-decoration: underline;
+    color: var(--color-stone);
+    transition: var(--transition-fast);
+}
+
+.footer-gym-note a:hover {
+    color: var(--color-white);
+}
+
+.desktop-nav {
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-link {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--color-charcoal);
+    padding: 8px 0;
+    position: relative;
+    opacity: 0.85;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--color-charcoal);
+    transition: var(--transition-fast);
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link:hover::after,
+.nav-link.active-link::after {
+    width: 100%;
+}
+
+.nav-link.active-link {
+    opacity: 1;
+    font-weight: 600;
+}
+
+/* Buttons System */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.btn-header {
+    padding: 10px 20px;
+    background-color: var(--color-sage);
+    color: var(--color-white);
+    border: 1px solid var(--color-sage);
+    font-size: 10px;
+}
+
+.btn-header:hover {
+    background-color: var(--color-charcoal);
+    border-color: var(--color-charcoal);
+}
+
+.btn-primary {
+    background-color: var(--color-sage);
+    color: var(--color-white);
+    border: 1px solid var(--color-sage);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-charcoal);
+    border-color: var(--color-charcoal);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-charcoal);
+    border: 1px solid var(--color-stone);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-charcoal);
+    border-color: var(--color-charcoal);
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
+
+.btn-small {
+    padding: 10px 22px;
+    font-size: 10px;
+}
+
+.btn-mobile-cta {
+    background-color: var(--color-sage);
+    color: var(--color-white);
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Hamburger button styling */
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 110;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-charcoal);
+    transition: var(--transition-smooth);
+}
+
+/* Hamburger active transformation */
+.mobile-nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Drawer Overlay */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-ivory);
+    z-index: 95;
+    padding: 120px 40px 40px 40px;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav[aria-hidden="false"] {
+    transform: translateX(0);
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mobile-nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(174, 168, 150, 0.2);
+}
+
+/* 4. Hero Section */
+.hero-section {
+    position: relative;
+    padding-top: calc(var(--header-height) + 60px);
+    padding-bottom: 100px;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-ivory);
+    overflow: hidden;
+}
+
+.hero-bg-diagonal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(115deg, 
+        transparent 0%, 
+        transparent 45%, 
+        rgba(94, 106, 90, 0.08) 45%, 
+        rgba(94, 106, 90, 0.08) 55%, 
+        transparent 55%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--color-charcoal);
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 520px;
+    opacity: 0.85;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-image-wrapper {
+    position: relative;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 6s ease;
+}
+
+.hero-image-container:hover .hero-img {
+    transform: scale(1.05);
+}
+
+.hero-image-accent-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: rgba(94, 106, 90, 0.12);
+    pointer-events: none;
+}
+
+/* 5. Benefits Strip */
+.benefits-strip-section {
+    background-color: var(--color-white);
+    border-top: 1px solid rgba(174, 168, 150, 0.2);
+    border-bottom: 1px solid rgba(174, 168, 150, 0.2);
+    padding: 50px 0;
+    position: relative;
+    z-index: 5;
+}
+
+.benefits-container {
+    gap: 0; /* Remove gap so borders align perfectly */
+}
+
+.benefit-item {
+    display: flex;
+    gap: 20px;
+    padding: 0 30px;
+    border-right: 1px solid rgba(174, 168, 150, 0.3);
+}
+
+.benefit-item:last-child {
+    border-right: none;
+}
+
+.benefit-icon-wrapper {
+    flex-shrink: 0;
+}
+
+.benefit-icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.benefit-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    color: var(--color-charcoal);
+}
+
+.benefit-description {
+    font-size: 13px;
+    line-height: 1.4;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+
+/* 6. About / Welcome Section */
+.grid-3-about {
+    display: grid;
+    grid-template-columns: 1.1fr 1.6fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.about-left-col {
+    position: sticky;
+    top: calc(var(--header-height) + 20px);
+}
+
+.about-intro-text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.about-btn-wrap {
+    margin-top: 35px;
+}
+
+/* Middle Col: Focus Cards */
+.grid-2-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.focus-card {
+    background-color: var(--color-white);
+    border: 1px solid rgba(174, 168, 150, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: var(--transition-smooth);
+}
+
+.focus-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-sage);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.focus-card-img-wrapper {
+    height: 180px;
+    overflow: hidden;
+}
+
+.focus-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 4s ease;
+}
+
+.focus-card:hover .focus-card-img {
+    transform: scale(1.06);
+}
+
+.focus-card-content {
+    padding: 24px;
+}
+
+.focus-card-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    color: var(--color-charcoal);
+}
+
+.focus-card-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.75;
+    margin-bottom: 0;
+}
+
+/* Right Col: Quick Contact Details Snippet */
+.contact-details-box {
+    background-color: rgba(174, 168, 150, 0.08);
+    border: 1px solid rgba(174, 168, 150, 0.25);
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.contact-detail-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-detail-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.detail-icon {
+    flex-shrink: 0;
+}
+
+.svg-detail-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.detail-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--color-sage);
+}
+
+.detail-value {
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.85;
+    margin-bottom: 0;
+}
+
+.contact-link:hover {
+    color: var(--color-sage);
+}
+
+.divider-line {
+    height: 1px;
+    background-color: rgba(174, 168, 150, 0.25);
+    margin: 25px 0;
+}
+
+.legal-registration-numbers {
+    font-size: 12px;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+.legal-registration-numbers p {
+    margin-bottom: 6px;
+}
+
+.legal-registration-numbers p:last-child {
+    margin-bottom: 0;
+}
+
+/* 7. Lead Therapist Profile Section (Updated for Team Collage) */
+.grid-2-profile {
+    display: grid;
+    grid-template-columns: 1.1fr 1.2fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.team-images-collage {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.collage-frame {
+    position: absolute;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: var(--transition-smooth);
+}
+
+.collage-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: var(--transition-smooth);
+    display: block;
+}
+
+/* Primary Frame (Indoor photo) */
+.primary-frame {
+    top: 0;
+    left: 0;
+    width: 78%;
+    height: 410px;
+    z-index: 2;
+}
+
+.primary-frame .collage-image-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(94, 106, 90, 0.04);
+    pointer-events: none;
+}
+
+/* Secondary Frame (Outdoor photo) */
+.secondary-frame {
+    bottom: 0;
+    right: 0;
+    width: 68%;
+    height: 350px;
+    z-index: 1;
+    border: 6px solid var(--color-white);
+}
+
+/* Collage Hover Interactions */
+.collage-frame:hover {
+    z-index: 5;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.collage-frame:hover .collage-image {
+    filter: grayscale(0%);
+}
+
+/* Hovering one pushes the other to background */
+.team-images-collage:hover .collage-frame:not(:hover) {
+    opacity: 0.85;
+}
+
+.profile-divider {
+    height: 1px;
+    background-color: rgba(174, 168, 150, 0.2);
+    margin: 35px 0;
+}
+
+.team-members-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member-card {
+    margin-bottom: 10px;
+}
+
+.member-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--color-charcoal);
+}
+
+.member-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-stone);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.profile-role {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-stone);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.profile-name {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.profile-quote {
+    font-size: 18px;
+    font-style: italic;
+    color: var(--color-sage);
+    border-left: 3px solid var(--color-stone);
+    padding-left: 20px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.profile-text {
+    font-size: 15px;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.specialties-badges-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.specialty-badge {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--color-sage);
+    background-color: rgba(94, 106, 90, 0.06);
+    border: 1px solid rgba(94, 106, 90, 0.15);
+    padding: 6px 14px;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+}
+
+/* 8. Treatments/Services Section */
+.treatments-section {
+    background-color: var(--color-ivory);
+}
+
+.treatments-grid {
+    margin-top: 20px;
+}
+
+.treatment-card {
+    background-color: var(--color-white);
+    border: 1px solid rgba(174, 168, 150, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+}
+
+.treatment-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-sage);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+}
+
+.treatment-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.treatment-number {
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--color-stone);
+    opacity: 0.5;
+}
+
+.treatment-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(94, 106, 90, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.treatment-card-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.treatment-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.treatment-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.75;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.treatment-features {
+    border-top: 1px solid rgba(174, 168, 150, 0.15);
+    padding-top: 20px;
+}
+
+.treatment-features li {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    opacity: 0.85;
+    position: relative;
+    padding-left: 18px;
+}
+
+.treatment-features li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--color-sage);
+}
+
+.treatment-features li:last-child {
+    margin-bottom: 0;
+}
+
+/* 9. Approach Section */
+.approach-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-2-approach {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.approach-intro-wrapper {
+    position: sticky;
+    top: calc(var(--header-height) + 40px);
+}
+
+.approach-lead-text {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    opacity: 0.85;
+}
+
+.approach-visual-timeline {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    width: 80%;
+}
+
+.approach-graphic-line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.approach-graphic-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    transition: var(--transition-smooth);
+}
+
+.approach-graphic-dot.active {
+    background-color: var(--color-stone);
+    box-shadow: 0 0 0 6px rgba(174, 168, 150, 0.3);
+}
+
+.approach-steps-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.approach-step {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition-smooth);
+}
+
+.approach-step:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-color: rgba(174, 168, 150, 0.3);
+}
+
+.step-num-badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(174, 168, 150, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-stone);
+    flex-shrink: 0;
+    transition: var(--transition-smooth);
+}
+
+.approach-step:hover .step-num-badge {
+    background-color: var(--color-stone);
+    color: var(--color-charcoal);
+    border-color: var(--color-stone);
+}
+
+.step-title {
+    font-size: 16px;
+    color: var(--color-white);
+    margin-bottom: 12px;
+}
+
+.step-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+
+/* 10. Contact Section */
+.grid-2-contact {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.contact-intro-description {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 45px;
+    opacity: 0.85;
+}
+
+.opening-hours-box {
+    background-color: rgba(174, 168, 150, 0.08);
+    border: 1px solid rgba(174, 168, 150, 0.2);
+    padding: 30px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+.hours-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: var(--color-charcoal);
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed rgba(174, 168, 150, 0.2);
+    padding-bottom: 8px;
+}
+
+.hours-list li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.hours-list .day {
+    font-weight: 500;
+}
+
+.hours-list .time {
+    opacity: 0.8;
+}
+
+/* Grayscale Map styles */
+.map-wrapper {
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(174, 168, 150, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.map-inner {
+    height: 220px;
+    width: 100%;
+}
+
+.google-map-iframe {
+    filter: grayscale(100%) invert(3%) contrast(90%);
+    opacity: 0.85;
+    transition: var(--transition-smooth);
+}
+
+.google-map-iframe:hover {
+    filter: grayscale(0%) invert(0%) contrast(100%);
+    opacity: 1;
+}
+
+/* Contact Form Container styling */
+.form-container-box {
+    background-color: var(--color-white);
+    border: 1px solid rgba(174, 168, 150, 0.25);
+    padding: 50px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03);
+    position: relative;
+    overflow: hidden;
+}
+
+.form-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.form-subtitle {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 35px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.form-label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-charcoal);
+    opacity: 0.8;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 16px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: var(--color-charcoal);
+    background-color: var(--color-ivory);
+    border: 1px solid rgba(174, 168, 150, 0.3);
+    border-radius: 4px;
+    transition: var(--transition-fast);
+}
+
+.form-control::placeholder {
+    opacity: 0.45;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-sage);
+    background-color: var(--color-white);
+    box-shadow: 0 0 0 3px rgba(94, 106, 90, 0.12);
+}
+
+.select-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%235E6A5A' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 18px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.textarea-control {
+    resize: vertical;
+}
+
+.form-checkbox-group {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.form-checkbox {
+    margin-top: 3px;
+    accent-color: var(--color-sage);
+    cursor: pointer;
+}
+
+.checkbox-label {
+    font-size: 12px;
+    line-height: 1.5;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Form Validation Errors */
+.error-msg {
+    display: none;
+    color: var(--color-error);
+    font-size: 11px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.form-group.has-error .form-control {
+    border-color: var(--color-error);
+    box-shadow: 0 0 0 3px rgba(178, 34, 34, 0.08);
+}
+
+.form-group.has-error .error-msg {
+    display: block;
+}
+
+#consent-error {
+    color: var(--color-error);
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Form Success Overlay Popup */
+.form-success-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 10;
+}
+
+.form-success-overlay.show-success {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.success-icon-wrap {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--color-sage);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+    box-shadow: 0 10px 20px rgba(94, 106, 90, 0.15);
+}
+
+.success-svg {
+    width: 32px;
+    height: 32px;
+}
+
+.success-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    font-size: 14px;
+    opacity: 0.8;
+    max-width: 380px;
+    margin: 0 auto 30px auto;
+    line-height: 1.7;
+}
+
+/* 11. Footer Section */
+.site-footer {
+    background-color: var(--color-charcoal);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-top-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 60px;
+}
+
+.footer-logo {
+    display: none;
+}
+.footer-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hb-logo {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-brand-statement {
+    font-size: 13px;
+    font-style: italic;
+    opacity: 0.65;
+    max-width: 360px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.footer-social-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(174, 168, 150, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon-link:hover {
+    border-color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.svg-social {
+    width: 18px;
+    height: 18px;
+}
+
+.footer-col-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 25px;
+    color: var(--color-stone);
+    font-weight: 600;
+}
+
+.footer-links-list li {
+    margin-bottom: 12px;
+}
+
+.footer-links-list a {
+    font-size: 13px;
+    opacity: 0.65;
+}
+
+.footer-links-list a:hover {
+    opacity: 1;
+    color: var(--color-stone);
+    padding-left: 4px;
+}
+
+.footer-contact-info {
+    font-size: 13px;
+    color: rgba(244, 242, 238, 0.82);
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.footer-contact-info a {
+    color: rgba(244, 242, 238, 0.82);
+    text-decoration: none;
+}
+
+.footer-contact-info a:hover {
+    color: #F4F2EE;
+}
+
+.footer-bottom-strip {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 22px 40px;
+}
+
+.copyright-text {
+    font-size: 12px;
+    opacity: 0.45;
+    margin-bottom: 0;
+}
+
+.footer-legal-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-legal-links a {
+    font-size: 12px;
+    opacity: 0.45;
+}
+
+.footer-legal-links a:hover {
+    opacity: 0.85;
+    color: var(--color-stone);
+}
+
+/* 11a. Tarieven Section */
+.tarieven-section {
+    background-color: var(--color-white);
+}
+
+.tarieven-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 40px;
+}
+
+.tarieven-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+    min-width: 600px;
+}
+
+.tarieven-table th, 
+.tarieven-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(174, 168, 150, 0.2);
+}
+
+.tarieven-table th {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--color-sage);
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-sage);
+}
+
+.tarieven-table tr {
+    transition: var(--transition-fast);
+}
+
+.tarieven-table tr:hover {
+    background-color: rgba(244, 242, 238, 0.4);
+}
+
+.tarieven-code {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-stone);
+}
+
+.tarieven-price {
+    font-weight: 600;
+    color: var(--color-charcoal);
+    text-align: right;
+}
+
+.tarieven-note-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--color-ivory);
+    border-left: 3px solid var(--color-stone);
+    border-radius: 0 4px 4px 0;
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* 11b. Vergoeding Section */
+.vergoeding-section {
+    background-color: var(--color-ivory);
+}
+
+.grid-2-vergoeding {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.vergoeding-text-box {
+    background-color: var(--color-white);
+    border: 1px solid rgba(174, 168, 150, 0.2);
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.vergoeding-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--color-charcoal);
+    font-weight: 500;
+}
+
+.vergoeding-list {
+    margin-top: 25px;
+}
+
+.vergoeding-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.vergoeding-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='none' stroke='%235E6A5A' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><polyline points='20 6 9 17 4 12'></polyline></svg>");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.vergoeding-list li strong {
+    color: var(--color-charcoal);
+}
+
+.vergoeding-contact-note {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.vergoeding-contact-note a {
+    color: var(--color-sage);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.vergoeding-contact-note a:hover {
+    color: var(--color-charcoal);
+}
+
+/* 12. Media Queries & Responsive Design */
+
+/* Large Tablets & Small Desktops */
+@media (max-width: 1100px) {
+    .grid-3-about {
+        grid-template-columns: 1.2fr 1.8fr;
+        gap: 40px;
     }
-  ]
-}</script></head>
-<body class="treatment-detail-page">
-<header class="site-header" id="site-header">
-<div class="header-container container">
-<a aria-label="AlianzaFysio homepage" class="logo-link" href="index.html#home"><span class="logo-img-wrapper"><img alt="AlianzaFysio logo" class="site-logo-img" src="assets/ALIANZATRA.png"/></span></a>
-<nav aria-label="Hoofdnavigatie" class="desktop-nav"><ul class="nav-list">
-<li><a class="nav-link" href="rugpijn-haarlem.html">Rugpijn</a></li><li><a class="nav-link" href="index.html#home">Home</a></li><li><a class="nav-link" href="index.html#about">Over ons</a></li><li><a class="nav-link active-link" href="index.html#treatments">Behandelingen</a></li><li><a class="nav-link" href="index.html#tarieven">Tarieven</a></li><li><a class="nav-link" href="index.html#vergoeding">Vergoeding</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
-</ul></nav>
-<div class="header-cta"><a class="btn btn-header" href="index.html#contact">Afspraak maken</a></div>
-<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Menu openen" class="mobile-nav-toggle"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
-</div>
-</header>
-<nav aria-hidden="true" aria-label="Mobiele navigatie" class="mobile-nav" id="mobile-nav"><ul class="mobile-nav-list">
-<li><a class="mobile-nav-link" href="rugpijn-haarlem.html">Rugpijn</a></li><li><a class="mobile-nav-link" href="index.html#home">Home</a></li><li><a class="mobile-nav-link" href="index.html#about">Over ons</a></li><li><a class="mobile-nav-link" href="index.html#treatments">Behandelingen</a></li><li><a class="mobile-nav-link" href="index.html#tarieven">Tarieven</a></li><li><a class="mobile-nav-link" href="index.html#vergoeding">Vergoeding</a></li><li><a class="mobile-nav-link" href="index.html#contact">Contact</a></li><li><a class="btn btn-mobile-cta" href="index.html#contact">Afspraak maken</a></li>
-</ul></nav>
-<main>
-<section class="detail-hero rug-hero"><div class="container detail-hero-grid"><div class="detail-hero-copy fade-in-section"><nav aria-label="Broodkruimel" class="detail-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Rugpijn Haarlem</span></nav><span class="sub-headline">Fysiotherapie voor rugklachten</span><h1>Rugpijn in Haarlem</h1><p class="detail-lead">Niet alle rugpijn is hetzelfde. Daarom starten wij niet met een standaardbehandeling, maar met een zorgvuldig onderzoek naar de belangrijkste factoren achter uw klacht.</p><div class="detail-actions"><a class="btn btn-primary" href="index.html#contact">Afspraak maken</a><a class="btn btn-secondary" href="#onderzoek">Onze aanpak</a></div></div><div class="detail-hero-image fade-in-section"><img alt="Minimalistische illustratie van de lage rug met spieren, gewrichten en zenuwen" height="720" src="assets/illustrations/rugpijn-hero.svg" width="900"/></div></div></section>
-<section class="detail-trust"><div class="container detail-trust-grid"><span>Geen verwijzing nodig</span><span>Contracten met alle zorgverzekeraars</span><span>Onderzoek vóór behandeling</span><span>Actief en persoonlijk herstelplan</span></div></section>
-<section class="detail-content"><div class="container detail-layout"><aside class="detail-toc"><p class="detail-toc-title">Op deze pagina</p><a href="#wat-is-rugpijn">Wat is rugpijn?</a><a href="#bronnen">Mogelijke bronnen</a><a href="#hulp">Wanneer hulp zoeken?</a><a href="#onderzoek">Ons onderzoek</a><a href="#behandeling">Behandeling</a><a href="#mri">MRI: wel of niet?</a><a href="#prognose">Herstel en prognose</a><a href="#faq">Veelgestelde vragen</a></aside>
-<article>
-<section class="detail-block" id="wat-is-rugpijn"><span class="detail-kicker">Begrijp uw klacht</span><h2>Wat is rugpijn?</h2><p>Rugpijn is een verzamelnaam voor pijn, stijfheid of bewegingsbeperking in de rug. De klacht kan lokaal blijven, maar ook uitstralen naar bil of been. Soms ontstaan tintelingen, een doof gevoel of krachtsverlies. De intensiteit van pijn vertelt niet automatisch hoeveel schade er aanwezig is: slaap, stress, belasting, conditie, verwachtingen en eerdere ervaringen kunnen allemaal invloed hebben op hoe de klacht wordt ervaren.</p><p>Bij veel mensen is geen enkele structuur als dé oorzaak aan te wijzen. Dat noemen we aspecifieke lage rugpijn. Dit betekent niet dat de klacht niet echt is. Het betekent dat herstel meestal het beste wordt gestuurd door functie, belastbaarheid en het klachtenpatroon te beoordelen, in plaats van alleen naar één anatomische afwijking te zoeken.</p><div class="detail-highlight"><strong>Belangrijk:</strong> rugpijn betekent zelden dat uw rug “versleten” of kwetsbaar is. Een veilige, geleidelijke terugkeer naar bewegen en dagelijkse activiteiten is vaak een belangrijk onderdeel van herstel.</div></section>
-<section class="detail-block" id="bronnen"><span class="detail-kicker">Klinisch redeneren</span><h2>Waar kan rugpijn vandaan komen?</h2><p>Spieren, gewrichten en zenuwen kunnen vergelijkbare klachten geven. Tijdens het onderzoek zoeken we daarom niet naar een snelle etikettering, maar naar het patroon dat het beste aansluit bij uw klachten en beperkingen.</p><div class="pain-source-grid"><article class="pain-source-card"><img alt="Illustratie van spiergerelateerde rugpijn" loading="lazy" src="assets/illustrations/myogeen.svg"/><div><h3>Myogeen: spieren en belasting</h3><p>Spiergerelateerde klachten kunnen ontstaan na een plotselinge inspanning, langdurig dezelfde houding, vermoeidheid of een verandering in trainingsbelasting. De pijn is vaak lokaal en kan gevoelig zijn bij aanspannen of drukken.</p></div></article><article class="pain-source-card"><img alt="Illustratie van gewrichtsgerelateerde rugpijn" loading="lazy" src="assets/illustrations/arthrogeen.svg"/><div><h3>Arthrogeen: gewrichten en beweging</h3><p>Gewrichten in de lage rug of het bekken kunnen bijdragen aan pijn en stijfheid. Het patroon kan veranderen bij draaien, strekken, lang staan of na een periode van inactiviteit.</p></div></article><article class="pain-source-card"><img alt="Illustratie van zenuwgerelateerde rugpijn" loading="lazy" src="assets/illustrations/neurogeen.svg"/><div><h3>Neurogeen: zenuw en uitstraling</h3><p>Prikkeling van een zenuwwortel kan pijn in het been, tintelingen, gevoelsverandering of krachtsverlies veroorzaken. De plaats van rugpijn alleen is onvoldoende om dit vast te stellen; neurologisch onderzoek is dan belangrijk.</p></div></article></div><div class="detail-philosophy"><span>De AlianzaFysio-aanpak</span><h3>De bron is niet altijd één structuur</h3><p>Rugklachten zijn vaak een combinatie van gevoelig weefsel, veranderde belasting, beschermend bewegen en verminderde belastbaarheid. Daarom stemmen we de behandeling af op het hele klinische beeld.</p></div></section>
-<section class="detail-block" id="hulp"><span class="detail-kicker">Veilige keuzes</span><h2>Wanneer hulp zoeken?</h2><div class="detail-grid-2"><div class="detail-info-card"><h3>Een afspraak bij de fysiotherapeut</h3><p>Overweeg onderzoek wanneer de pijn uw werk, slaap, sport of dagelijkse activiteiten beperkt; wanneer klachten terugkeren; wanneer u onzeker bent over bewegen; of wanneer herstel uitblijft ondanks aanpassing van belasting.</p></div><div class="detail-info-card urgent-card"><h3>Neem direct medisch contact op</h3><p>Zoek spoedig medische hulp bij nieuw verlies van controle over blaas of darmen, gevoelloosheid rond kruis of zitvlak, snel toenemend krachtsverlies, ernstige rugpijn na groot trauma, of rugpijn met koorts en duidelijke ziekteverschijnselen.</p></div></div><p>Andere signalen, zoals onverklaard gewichtsverlies, een voorgeschiedenis met kanker, langdurig corticosteroïdgebruik of pijn die sterk progressief is, vragen eveneens om beoordeling door huisarts of specialist. Eén signaal betekent niet automatisch dat er iets ernstigs speelt, maar de combinatie en het beloop zijn belangrijk.</p></section>
-<section class="detail-block" id="onderzoek"><span class="detail-kicker">Eerste afspraak</span><h2>Hoe onderzoeken wij rugpijn?</h2><p>We beginnen met uw verhaal: wanneer ontstonden de klachten, wat beïnvloedt ze, welke activiteiten zijn moeilijk en wat wilt u weer kunnen? Vervolgens kiezen we alleen de tests die voor uw klachtenpatroon relevant zijn.</p><ol class="detail-timeline"><li><span>01</span><div><h3>Vraaggesprek en screening</h3><p>We bespreken klachtenverloop, gezondheid, belasting, slaap, werk, sport, eerdere episodes en signalen die aanvullende medische beoordeling kunnen vragen.</p></div></li><li><span>02</span><div><h3>Bewegings- en functieonderzoek</h3><p>We bekijken relevante bewegingen, houdingen, kracht, coördinatie en activiteiten die uw klachten uitlokken of juist verminderen.</p></div></li><li><span>03</span><div><h3>Neurologisch onderzoek indien nodig</h3><p>Bij uitstraling, tintelingen of krachtsverandering testen we onder meer spierkracht, gevoel, reflexen en mechanische gevoeligheid van zenuwweefsel.</p></div></li><li><span>04</span><div><h3>Uitleg en gezamenlijk plan</h3><p>U krijgt een begrijpelijke werkhypothese, realistische verwachtingen en een plan dat past bij uw doelen en beschikbare tijd.</p></div></li></ol></section>
-<section class="detail-block" id="behandeling"><span class="detail-kicker">Persoonlijk behandelplan</span><h2>Behandeling van rugpijn</h2><p>Een effectieve behandeling is meestal actief en doelgericht. We kiezen interventies op basis van uw onderzoek, niet omdat één techniek bij iedereen zou werken.</p><div class="detail-condition-list"><div><h3>Uitleg en zelfmanagement</h3><p>Begrijpen wat veilig is, hoe u belasting doseert en hoe u reageert op een tijdelijke toename van pijn.</p></div><div><h3>Oefentherapie</h3><p>Gericht op mobiliteit, kracht, uithoudingsvermogen, controle en vertrouwen in dagelijkse of sportieve bewegingen.</p></div><div><h3>Hands-on technieken</h3><p>Kunnen tijdelijk helpen om pijn of stijfheid te verminderen en beweging makkelijker te maken, altijd gekoppeld aan actief herstel.</p></div><div><h3>Dry needling wanneer passend</h3><p>Bij een relevante spiercomponent kan dry needling ondersteunend zijn. Lees meer op onze <a href="dry-needling-haarlem.html">pagina over dry needling in Haarlem</a>.</p></div><div><h3>Opbouw van werk en sport</h3><p>We vertalen oefeningen naar tillen, zitten, hardlopen, krachttraining of andere activiteiten die voor u belangrijk zijn.</p></div><div><h3>Evaluatie</h3><p>We volgen niet alleen pijn, maar ook functie, vertrouwen en deelname. Als herstel anders verloopt dan verwacht, heroverwegen we de aanpak.</p></div></div></section>
-<section class="detail-block" id="mri"><span class="detail-kicker">Beeldvorming</span><h2>Heb ik een MRI nodig?</h2><p>Bij aspecifieke lage rugpijn wordt routinematige beeldvorming niet aanbevolen. MRI-beelden laten regelmatig veranderingen zien bij mensen zonder pijn, zoals discusuitstulpingen of tekenen van slijtage. Zo’n bevinding moet daarom altijd worden geïnterpreteerd naast uw verhaal en lichamelijk onderzoek.</p><p>Een MRI kan wél zinvol zijn wanneer er aanwijzingen zijn voor een specifieke aandoening, bij progressieve neurologische uitval, of wanneer de uitslag naar verwachting invloed heeft op een medische beslissing. De huisarts of specialist bepaalt of en wanneer beeldvorming nodig is.</p><div class="detail-highlight"><strong>Ons uitgangspunt:</strong> niet “een scan om zekerheid te krijgen”, maar eerst bepalen welke informatie nodig is om de juiste zorgbeslissing te nemen.</div></section>
-<section class="detail-block" id="prognose"><span class="detail-kicker">Herstel</span><h2>Hoe lang duurt herstel?</h2><p>Het hersteltempo verschilt per persoon. Veel nieuwe episodes verbeteren in de eerste weken, maar schommelingen zijn normaal. Bij langdurige of terugkerende klachten duurt het vaak langer om belastbaarheid, vertrouwen en deelname volledig op te bouwen.</p><div class="detail-grid-2"><div class="detail-mini-card"><strong>Nieuwe episode</strong><span>Focus op geruststelling, blijven bewegen en tijdelijke aanpassing van belasting.</span></div><div class="detail-mini-card"><strong>Terugkerende klachten</strong><span>Zoek naar patronen in belasting, herstel, werk, sport en eerdere strategieën.</span></div><div class="detail-mini-card"><strong>Uitstraling naar het been</strong><span>Controleer neurologische functie en volg veranderingen in pijn, gevoel en kracht.</span></div><div class="detail-mini-card"><strong>Langdurige rugpijn</strong><span>Werk stapsgewijs aan functie, conditie, vertrouwen en betekenisvolle doelen.</span></div></div><p>We spreken vroeg af wanneer we evalueren. Zo weet u of het plan effect heeft en wanneer aanpassing of overleg met de huisarts passend is.</p></section>
-<section class="detail-block" id="faq"><span class="detail-kicker">Veelgestelde vragen</span><h2>Veelgestelde vragen over rugpijn</h2><div class="detail-faq"><details><summary>1. Moet ik rust houden bij rugpijn?</summary><p>Langdurige bedrust wordt meestal afgeraden. Rustig blijven bewegen en activiteiten tijdelijk aanpassen helpt doorgaans beter. Een korte pauze kan prettig zijn, maar probeer regelmatig van houding te wisselen.</p></details><details><summary>2. Is wandelen goed voor rugpijn?</summary><p>Voor veel mensen is wandelen een geschikte manier om actief te blijven. Begin met een haalbare duur en bouw geleidelijk op. De reactie in de uren erna is belangrijker dan een tijdelijke lichte toename tijdens het lopen.</p></details><details><summary>3. Mag ik werken met rugpijn?</summary><p>Vaak wel, eventueel met tijdelijke aanpassingen in duur, houding, tillen of pauzes. Volledig stoppen is niet altijd nodig. We kunnen helpen een realistische opbouw te maken.</p></details><details><summary>4. Heb ik een MRI nodig?</summary><p>Meestal niet bij gewone lage rugpijn. Beeldvorming wordt vooral overwogen wanneer er aanwijzingen zijn voor een specifieke oorzaak of wanneer de uitslag een medische beslissing kan veranderen.</p></details><details><summary>5. Kan fysiotherapie helpen bij een hernia?</summary><p>Veel mensen met een hernia herstellen zonder operatie. Fysiotherapie kan helpen bij bewegen, opbouw van belasting, uitleg en het volgen van neurologische symptomen. Bij toenemend krachtsverlies is medische beoordeling belangrijk.</p></details><details><summary>6. Kan dry needling helpen?</summary><p>Wanneer spieren duidelijk bijdragen aan de klacht, kan dry needling tijdelijk pijn of spanning verminderen. Het wordt bij AlianzaFysio alleen gebruikt als onderdeel van een breder actief behandelplan.</p></details><details><summary>7. Hoeveel sessies heb ik nodig?</summary><p>Dat hangt af van klachtenduur, beperkingen, hersteltempo en doelen. Na het eerste onderzoek bespreken we een eerste behandelperiode en een duidelijk evaluatiemoment.</p></details><details><summary>8. Betekent pijn dat ik schade maak?</summary><p>Niet automatisch. Pijn is een beschermend signaal en kan gevoeliger worden door meerdere factoren. We helpen u onderscheid te maken tussen normale reacties op opbouw en signalen die aanpassing vragen.</p></details><details><summary>9. Komt rugpijn vaak terug?</summary><p>Terugkerende episodes komen voor. Dat betekent niet dat uw rug zwak is. Herkennen van vroege signalen, actief blijven en een passend plan voor belasting kunnen helpen om toekomstige episodes beter op te vangen.</p></details><details><summary>10. Heb ik een verwijzing nodig?</summary><p>Meestal niet. U kunt doorgaans rechtstreeks een afspraak maken via Directe Toegankelijkheid Fysiotherapie. Wanneer medische beoordeling nodig is, adviseren wij contact met uw huisarts.</p></details></div><p class="source-note">Patiëntinformatie gebaseerd op Nederlandse eerstelijnsadviezen, waaronder de NHG-Standaard Aspecifieke lagerugpijn. Deze pagina vervangt geen individuele medische beoordeling.</p></section>
-</article></div></section>
-<section class="detail-final-cta"><div class="container detail-final-cta-inner"><div><span class="sub-headline">Rugpijn fysiotherapie Haarlem</span><h2>Wilt u weer vrijer bewegen?</h2><p>Plan een afspraak voor een zorgvuldig onderzoek, duidelijke uitleg en een persoonlijk herstelplan.</p></div><div class="detail-actions"><a class="btn btn-primary" href="index.html#contact">Afspraak maken</a><a class="btn btn-secondary" href="tel:+31643054477">Bel +31 6 43054477</a></div></div></section>
-</main>
-<footer class="site-footer bg-footer text-white">
-<div class="container footer-container">
-<div class="footer-top-grid">
-<!-- Col 1: Logo & Statement -->
-<div class="footer-col-brand">
-<div class="footer-logo-wrapper footer-logos">
-<span class="logo-img-wrapper text-light">
-<img alt="AlianzaFysio Logo" class="site-logo-img" src="assets/ALIANZATRA.png"/>
-</span>
-<a href="https://healthybastards.nl" target="_blank">
-<img alt="Healthy Bastards" class="site-logo-img hb-logo" src="assets/hb.jpg"/>
-</a>
-</div>
-<p class="footer-brand-statement">
-        “Persoonlijke zorg. Evidence-based aanpak. Gericht op duurzaam herstel.”
-    </p>
-</div>
-<!-- Social Icons -->
-<div class="footer-social-wrapper">
-<a aria-label="AlianzaFysio Instagram" class="social-icon-link" href="https://instagram.com/alianzafysio" rel="noopener noreferrer" target="_blank">
-<svg class="svg-social" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<rect fill="none" height="20" rx="5" ry="5" stroke="#AEA896" stroke-width="1.8" width="20" x="2" y="2"></rect>
-<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="#AEA896" stroke-width="1.8"></path>
-<line stroke="#AEA896" stroke-linecap="round" stroke-width="2" x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-</svg>
-</a>
-<a aria-label="AlianzaFysio LinkedIn" class="social-icon-link" href="https://linkedin.com/company/alianzafysio" rel="noopener noreferrer" target="_blank">
-<svg class="svg-social" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" fill="none" stroke="#AEA896" stroke-width="1.8"></path>
-<rect fill="none" height="12" stroke="#AEA896" stroke-width="1.8" width="4" x="2" y="9"></rect>
-<circle cx="4" cy="4" fill="#AEA896" r="2"></circle>
-</svg>
-</a>
-</div>
-</div>
-<!-- Col 2: Navigation Links -->
-<div class="footer-col-nav">
-<h4 class="footer-col-title">Navigatie</h4>
-<ul class="footer-links-list">
-<li><a href="index.html#home">Home</a></li>
-<li><a href="rugpijn-haarlem.html">Rugpijn Haarlem</a></li><li><a href="index.html#about">Over ons</a></li>
-<li><a href="index.html#treatments">Behandelingen</a></li>
-<li><a href="dry-needling-haarlem.html">Dry needling Haarlem</a></li>
-<li><a href="index.html#tarieven">Tarieven &amp; tarieventabel</a></li>
-<li><a href="index.html#vergoeding">Vergoeding &amp; indicatie</a></li>
-<li><a href="index.html#contact">Contact &amp; boeking</a></li>
-</ul>
-</div>
-<!-- Col 3: Contact details -->
-<div class="footer-col-contact">
-<h4 class="footer-col-title">AlianzaFysio</h4>
-<p class="footer-contact-info">Zijlweg Zijweg 2</p>
-<p class="footer-contact-info">2015 BK Haarlem</p>
-<p class="footer-contact-info"><span class="footer-gym-note">(gevestigd in <a href="https://healthy-bastards.nl/" rel="noopener noreferrer" target="_blank">Healthy Bastards</a>)</span></p>
-<p class="footer-contact-info">E-mail: <a href="mailto:info@alianzafysio.com">info@alianzafysio.com</a></p>
-<p class="footer-contact-info" style="margin-top: 15px; font-size: 11px; opacity: 0.5; line-height: 1.5;">
-                        AGB-praktijkcode: 04900301<br/>
-                        KvK-nummer: 42007289<br/>
-                        Vestigingsnr: 000065108051
-                    </p>
-</div>
-</div>
-<div class="footer-bottom-strip">
-<p class="copyright-text">© 2026 AlianzaFysio. Alle rechten voorbehouden.</p>
-<div class="footer-legal-links">
-<a href="privacy.html">Privacyverklaring</a>
-<a href="cookiebeleid.html">Cookiebeleid</a>
-<a href="algemene-voorwaarden.html">Algemene voorwaarden</a>
-<a href="klachtenregeling.html">Klachtenregeling</a>
-<a href="disclaimer.html">Disclaimer</a>
-</div>
-</div>
+    .about-right-col {
+        grid-column: span 2;
+    }
+    .contact-details-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .contact-details-box .divider-line,
+    .contact-details-box .legal-registration-numbers {
+        grid-column: span 3;
+    }
+    .contact-details-box .divider-line {
+        margin: 15px 0;
+    }
+    .contact-details-box .contact-detail-item {
+        margin-bottom: 0;
+    }
+}
 
-</footer>
-<!-- Floating WhatsApp button -->
-<a aria-label="Neem contact op met AlianzaFysio via WhatsApp" class="whatsapp-button" href="https://wa.me/31643054477?text=Hallo%20AlianzaFysio%2C%20ik%20wil%20graag%20een%20afspraak%20maken." rel="noopener noreferrer" target="_blank" title="WhatsApp ons">
-<svg aria-hidden="true" focusable="false" viewbox="0 0 32 32">
-<path d="M16.04 3C8.86 3 3.02 8.71 3.02 15.75c0 2.25.6 4.45 1.74 6.37L3 29l7.08-1.81a13.2 13.2 0 0 0 5.95 1.43h.01c7.17 0 13.01-5.72 13.01-12.76C29.05 8.72 23.22 3 16.04 3Zm0 23.46h-.01a11 11 0 0 1-5.59-1.5l-.4-.24-4.2 1.08 1.12-4.01-.26-.41a10.5 10.5 0 0 1-1.63-5.63c0-5.85 4.92-10.61 10.98-10.61 6.05 0 10.97 4.76 10.97 10.62 0 5.85-4.92 10.7-10.98 10.7Zm6.02-7.94c-.33-.16-1.95-.94-2.25-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.26-.19.21-.38.24-.71.08-.33-.16-1.39-.5-2.65-1.59-.98-.85-1.64-1.9-1.83-2.22-.19-.32-.02-.49.14-.65.15-.14.33-.37.49-.56.16-.19.22-.32.33-.53.11-.21.05-.4-.03-.56-.08-.16-.74-1.73-1.01-2.37-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.4-.3.32-1.15 1.1-1.15 2.69 0 1.58 1.18 3.11 1.34 3.32.16.21 2.32 3.47 5.63 4.87.79.33 1.4.53 1.88.68.79.24 1.5.21 2.07.13.63-.09 1.95-.78 2.22-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.63-.37Z"></path>
-</svg>
-<span class="whatsapp-tooltip">WhatsApp ons</span>
-</a>
-<script src="main.js"></script>
-</body>
-</html>
+/* Tablets (Portrait) */
+@media (max-width: 900px) {
+    :root {
+        --header-height: 80px;
+    }
+    
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .section-padding-double {
+        padding: 80px 0;
+    }
+
+    .grid-2, .grid-2-vergoeding {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    /* Header Nav hidden in drawer */
+    .desktop-nav, .header-cta {
+        display: none;
+    }
+
+    .mobile-nav-toggle {
+        display: flex;
+    }
+
+    /* Hero section adjust */
+    .hero-section {
+        padding-top: calc(var(--header-height) + 30px);
+        padding-bottom: 60px;
+    }
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .hero-image-container {
+        height: 380px;
+        clip-path: none;
+    }
+    .hero-image-accent-border {
+        display: none;
+    }
+
+    /* Benefits Strip column stacked */
+    .benefits-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 0;
+    }
+    .benefit-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(174, 168, 150, 0.15);
+        padding-bottom: 20px;
+    }
+    .benefit-item:nth-child(even) {
+        border-left: 1px solid rgba(174, 168, 150, 0.15);
+        padding-left: 30px;
+        border-bottom: 1px solid rgba(174, 168, 150, 0.15);
+    }
+    .benefit-item:nth-child(3),
+    .benefit-item:nth-child(4) {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-top: 15px;
+    }
+
+    /* Welcome / About columns */
+    .grid-3-about {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .about-left-col {
+        position: static;
+    }
+    .about-right-col {
+        grid-column: span 1;
+    }
+    .contact-details-box {
+        grid-template-columns: 1fr;
+    }
+    .contact-details-box .divider-line,
+    .contact-details-box .legal-registration-numbers {
+        grid-column: span 1;
+    }
+    .contact-details-box .contact-detail-item {
+        margin-bottom: 20px;
+    }
+
+    /* Profile Column adjust */
+    .grid-2-profile {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .team-images-collage {
+        height: 420px;
+        max-width: 380px;
+    }
+    .primary-frame {
+        width: 75%;
+        height: 320px;
+    }
+    .secondary-frame {
+        width: 65%;
+        height: 270px;
+    }
+
+    /* Approach Grid adjust */
+    .grid-2-approach {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .approach-intro-wrapper {
+        position: static;
+    }
+    .approach-visual-timeline {
+        display: none;
+    }
+
+    /* Contact Grid adjust */
+    .grid-2-contact {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    /* Footer Col Grid adjust */
+    .footer-top-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .footer-col-brand {
+        grid-column: span 2;
+    }
+}
+
+/* Small Screens / Mobile Phones */
+@media (max-width: 580px) {
+    :root {
+        --header-height: 70px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Benefits Strip simple stack */
+    .benefits-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .benefit-item,
+    .benefit-item:nth-child(even) {
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid rgba(174, 168, 150, 0.15);
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+    .benefit-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    /* About cards column */
+    .grid-2-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container-box, .vergoeding-text-box {
+        padding: 30px 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-top-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .footer-col-brand {
+        grid-column: span 1;
+    }
+
+    .footer-bottom-strip {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-legal-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+/* =======================================================
+   Legal pages
+======================================================= */
+
+.legal-page {
+    background-color: var(--color-ivory);
+    padding: 120px 0;
+    min-height: 100vh;
+}
+
+.legal-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.legal-page h1 {
+    font-size: 44px;
+    margin-bottom: 35px;
+    color: var(--color-charcoal);
+    font-weight: 500;
+}
+
+.legal-page h2 {
+    font-size: 26px;
+    margin-top: 42px;
+    margin-bottom: 16px;
+    color: var(--color-sage);
+    font-weight: 500;
+}
+
+.legal-page p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--color-charcoal);
+    margin-bottom: 18px;
+}
+
+.legal-page a {
+    color: var(--color-sage);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.legal-page a:hover {
+    text-decoration: underline;
+}
+/* Emergency visibility fix */
+.fade-in-section {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Floating WhatsApp button */
+.whatsapp-button {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 8px 24px rgba(22, 35, 40, 0.22);
+    z-index: 9999;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-button svg {
+    width: 31px;
+    height: 31px;
+    fill: #FFFFFF;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 12px 30px rgba(22, 35, 40, 0.28);
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 70px;
+    white-space: nowrap;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(6px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    pointer-events: none;
+}
+
+.whatsapp-button:hover .whatsapp-tooltip,
+.whatsapp-button:focus-visible .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+@media (max-width: 600px) {
+    .whatsapp-button {
+        right: 16px;
+        bottom: 16px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .whatsapp-button svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .whatsapp-tooltip {
+        display: none;
+    }
+}
+
+/* Google Reviews section */
+.google-reviews-section {
+    padding: 56px 0;
+    background-color: var(--color-white);
+    border-top: 1px solid rgba(174, 168, 150, 0.22);
+}
+
+.google-reviews-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.65fr 1fr auto;
+    gap: 34px;
+    align-items: center;
+}
+
+.google-reviews-heading {
+    min-width: 0;
+}
+
+.google-reviews-title-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.google-reviews-title {
+    margin: 0;
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.google-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(174, 168, 150, 0.45);
+    color: var(--color-sage);
+    font-size: 18px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.google-reviews-rating {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-left: 28px;
+    border-left: 1px solid rgba(174, 168, 150, 0.35);
+}
+
+.google-stars,
+.featured-review-stars {
+    color: #E2A900;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+.google-stars {
+    font-size: 22px;
+}
+
+.google-score {
+    margin: 0 0 4px;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.google-review-count {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.72;
+}
+
+.featured-review {
+    padding: 22px 24px;
+    background-color: var(--color-ivory);
+    border: 1px solid rgba(94, 106, 90, 0.18);
+    border-left: 3px solid var(--color-sage);
+    border-radius: 4px;
+}
+
+.featured-review-stars {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.featured-review blockquote {
+    margin: 0 0 12px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--color-charcoal);
+}
+
+.featured-review-author {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-sage);
+}
+
+.google-reviews-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 205px;
+}
+
+.google-reviews-actions .btn {
+    width: 100%;
+    white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+    .google-reviews-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .google-reviews-heading,
+    .featured-review {
+        grid-column: 1 / -1;
+    }
+
+    .google-reviews-rating {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .google-reviews-actions {
+        justify-self: end;
+    }
+}
+
+@media (max-width: 600px) {
+    .google-reviews-section {
+        padding: 48px 0;
+    }
+
+    .google-reviews-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .google-reviews-heading,
+    .featured-review {
+        grid-column: auto;
+    }
+
+    .google-reviews-title {
+        font-size: 2rem;
+    }
+
+    .google-reviews-title-row {
+        align-items: flex-start;
+    }
+
+    .google-reviews-rating {
+        align-items: flex-start;
+    }
+
+    .google-reviews-actions {
+        width: 100%;
+        justify-self: stretch;
+    }
+}
+
+/* Local SEO label in hero */
+.hero-local-label {
+    margin-bottom: 18px;
+}
+
+
+
+/* -------------------------------------------------------------
+   TREATMENT DETAIL PAGES
+   Reusable layout: Dry Needling and future condition pages
+   ------------------------------------------------------------- */
+.treatment-more-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    color: var(--color-primary, #5E6A5A);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: gap .25s ease, opacity .25s ease;
+}
+.treatment-more-link:hover { gap: 12px; opacity: .78; }
+
+.treatment-detail-page { background: #fff; color: #2f352f; }
+.treatment-detail-page main { overflow: clip; }
+.treatment-detail-page .site-header .nav-link.active-link::after { width: 100%; }
+
+.detail-hero {
+    position: relative;
+    padding: 150px 0 92px;
+    background: linear-gradient(135deg, #F4F2EE 0%, #fff 72%);
+}
+.detail-hero::after {
+    content: "";
+    position: absolute;
+    top: -24%;
+    right: -14%;
+    width: 48%;
+    height: 130%;
+    background: rgba(94,106,90,.06);
+    transform: skewX(-18deg);
+}
+.detail-hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.06fr .94fr;
+    gap: clamp(44px, 7vw, 100px);
+    align-items: center;
+}
+.detail-breadcrumb { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 26px; color: #747b74; font-size: 12px; }
+.detail-breadcrumb a { color: #5E6A5A; text-decoration: none; }
+.detail-hero h1 { max-width: 760px; margin: 13px 0 22px; color: #485345; font-size: clamp(43px, 6vw, 76px); font-weight: 500; line-height: 1.04; letter-spacing: -.045em; }
+.detail-lead { max-width: 690px; margin: 0; color: #697169; font-size: clamp(17px,2vw,21px); line-height: 1.75; }
+.detail-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.detail-hero-image { position: relative; }
+.detail-hero-image::before { content:""; position:absolute; inset:22px -22px -22px 22px; border:1px solid #5E6A5A; z-index:-1; }
+.detail-hero-image img { display:block; width:100%; min-height:520px; object-fit:cover; box-shadow:0 18px 50px rgba(39,51,42,.10); }
+
+.detail-trust { background:#5E6A5A; color:#F4F2EE; }
+.detail-trust-grid { display:grid; grid-template-columns:repeat(4,1fr); }
+.detail-trust-grid span { padding:25px 22px; text-align:center; font-size:12px; letter-spacing:.04em; border-right:1px solid rgba(255,255,255,.18); }
+.detail-trust-grid span:last-child { border-right:0; }
+
+.detail-content { padding:105px 0; }
+.detail-layout { display:grid; grid-template-columns:240px minmax(0,820px); gap:clamp(52px,8vw,120px); justify-content:center; align-items:start; }
+.detail-toc { position:sticky; top:110px; padding:26px; border:1px solid rgba(94,106,90,.18); background:#F4F2EE; }
+.detail-toc-title { margin:0 0 14px; color:#485345; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; }
+.detail-toc a { display:block; padding:8px 0; color:#697169; font-size:13px; text-decoration:none; border-bottom:1px solid rgba(94,106,90,.1); }
+.detail-toc a:hover { color:#5E6A5A; }
+.detail-block { padding:0 0 78px; margin:0 0 78px; border-bottom:1px solid rgba(94,106,90,.18); scroll-margin-top:110px; }
+.detail-block:last-child { margin-bottom:0; }
+.detail-kicker { display:block; margin-bottom:12px; color:#5E6A5A; font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; }
+.detail-block h2 { margin:0 0 24px; color:#485345; font-size:clamp(30px,4vw,47px); font-weight:500; line-height:1.12; letter-spacing:-.025em; }
+.detail-block h3 { color:#485345; font-size:18px; font-weight:600; }
+.detail-block p { color:#697169; font-size:16px; line-height:1.8; }
+.detail-highlight { margin-top:30px; padding:24px 28px; border-left:4px solid #5E6A5A; background:#F4F2EE; line-height:1.75; }
+.detail-highlight strong { color:#485345; }
+.detail-grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:32px; }
+.detail-mini-card { padding:22px; border:1px solid rgba(94,106,90,.18); }
+.detail-mini-card strong { display:block; margin-bottom:8px; color:#485345; }
+.detail-mini-card span { color:#697169; font-size:13px; }
+.detail-info-card { padding:25px; background:#F4F2EE; }
+.detail-info-card h3 { margin:0 0 8px; }
+.detail-info-card p { margin:0; font-size:14px; }
+.detail-philosophy { margin-top:38px; padding:clamp(28px,5vw,48px); color:#F4F2EE; background:#5E6A5A; }
+.detail-philosophy > span { font-size:11px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; }
+.detail-philosophy h3 { margin:12px 0; color:#fff; font-size:clamp(24px,3vw,34px); line-height:1.25; }
+.detail-philosophy p { margin:0; color:rgba(255,255,255,.82); }
+.detail-condition-list { display:grid; grid-template-columns:repeat(2,1fr); margin-top:34px; border-top:1px solid rgba(94,106,90,.18); }
+.detail-condition-list > div { padding:28px 26px; border-right:1px solid rgba(94,106,90,.18); border-bottom:1px solid rgba(94,106,90,.18); }
+.detail-condition-list > div:nth-child(even) { border-right:0; }
+.detail-condition-list h3 { margin:0 0 10px; }
+.detail-condition-list p { margin:0; font-size:14px; }
+.detail-timeline { padding:0; margin:38px 0 0; list-style:none; }
+.detail-timeline li { position:relative; display:grid; grid-template-columns:68px 1fr; gap:24px; padding:0 0 34px; }
+.detail-timeline li::before { content:""; position:absolute; left:28px; top:52px; bottom:0; width:1px; background:rgba(94,106,90,.18); }
+.detail-timeline li:last-child::before { display:none; }
+.detail-timeline li > span { display:grid; place-items:center; width:56px; height:56px; border-radius:50%; color:#fff; background:#5E6A5A; font-size:12px; }
+.detail-timeline h3 { margin:5px 0 7px; }
+.detail-timeline p { margin:0; }
+.detail-comparison { margin-top:32px; border:1px solid rgba(94,106,90,.18); }
+.detail-comparison > div { display:grid; grid-template-columns:1fr 1fr; }
+.detail-comparison > div > * { padding:18px 22px; border-bottom:1px solid rgba(94,106,90,.18); }
+.detail-comparison > div > *:first-child { border-right:1px solid rgba(94,106,90,.18); }
+.detail-comparison-head { color:#fff; background:#5E6A5A; }
+.detail-comparison-head strong { color:#fff; }
+.detail-comparison span { color:#697169; font-size:14px; }
+.detail-faq { margin-top:30px; border-top:1px solid rgba(94,106,90,.18); }
+.detail-faq details { border-bottom:1px solid rgba(94,106,90,.18); }
+.detail-faq summary { position:relative; cursor:pointer; padding:23px 45px 23px 0; color:#485345; font-weight:600; list-style:none; }
+.detail-faq summary::-webkit-details-marker { display:none; }
+.detail-faq summary::after { content:"+"; position:absolute; right:4px; top:18px; color:#5E6A5A; font-size:26px; font-weight:300; }
+.detail-faq details[open] summary::after { content:"–"; }
+.detail-faq details p { max-width:720px; margin:-4px 0 23px; }
+.detail-final-cta { padding:90px 0; background:#F4F2EE; }
+.detail-final-cta-inner { display:flex; justify-content:space-between; align-items:center; gap:50px; }
+.detail-final-cta h2 { max-width:700px; margin:10px 0 12px; color:#485345; font-size:clamp(31px,4vw,48px); font-weight:500; line-height:1.15; }
+.detail-final-cta p { margin:0; color:#697169; }
+
+@media (max-width: 980px) {
+    .detail-hero { padding-top:120px; }
+    .detail-hero-grid { grid-template-columns:1fr; }
+    .detail-hero-image img { min-height:380px; }
+    .detail-trust-grid { grid-template-columns:repeat(2,1fr); }
+    .detail-trust-grid span:nth-child(2) { border-right:0; }
+    .detail-trust-grid span:nth-child(-n+2) { border-bottom:1px solid rgba(255,255,255,.18); }
+    .detail-layout { grid-template-columns:1fr; }
+    .detail-toc { position:static; }
+    .detail-final-cta-inner { align-items:flex-start; flex-direction:column; }
+}
+@media (max-width: 640px) {
+    .detail-hero { padding:105px 0 60px; }
+    .detail-hero-image::before { inset:12px -10px -12px 10px; }
+    .detail-hero-image img { min-height:300px; }
+    .detail-actions { flex-direction:column; align-items:stretch; }
+    .detail-actions .btn { text-align:center; }
+    .detail-trust-grid, .detail-grid-2, .detail-condition-list { grid-template-columns:1fr; }
+    .detail-trust-grid span { border-right:0; border-bottom:1px solid rgba(255,255,255,.18); }
+    .detail-content { padding:70px 0; }
+    .detail-block { padding-bottom:58px; margin-bottom:58px; }
+    .detail-condition-list > div { border-right:0; }
+    .detail-comparison > div { grid-template-columns:1fr; }
+    .detail-comparison > div > *:first-child { border-right:0; }
+    .detail-comparison > div > *:last-child { padding-top:0; }
+    .detail-comparison-head > *:last-child { padding-top:18px; }
+}
