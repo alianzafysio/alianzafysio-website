@@ -1,0 +1,8 @@
+ALIANZAFYSIO — RUGPIJN UPDATE
+
+Upload the CONTENTS of this folder to the root of the GitHub repository.
+At repository root you must see index.html, rugpijn-haarlem.html, style.css and the assets folder.
+Do not upload an extra outer folder.
+
+Recommended commit message:
+Add Rugpijn Haarlem page safely
