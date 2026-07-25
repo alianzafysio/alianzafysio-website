@@ -233,3 +233,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+// Google review banner: fade every 3 seconds. Add verified reviews to this array as they are received.
+document.addEventListener('DOMContentLoaded', () => {
+  const card = document.querySelector('.review-rotator');
+  const text = document.getElementById('rotating-review-text');
+  const author = document.getElementById('rotating-review-author');
+  if (!card || !text || !author) return;
+  const reviews = [
+    { text: '“Zeer betrouwbaar en goede persoonlijke zorg! Absolute aanrader.”', author: '— Lotte Bos' }
+  ];
+  let index = 0;
+  window.setInterval(() => {
+    card.classList.add('is-changing');
+    window.setTimeout(() => {
+      index = (index + 1) % reviews.length;
+      text.textContent = reviews[index].text;
+      author.textContent = reviews[index].author;
+      card.classList.remove('is-changing');
+    }, 450);
+  }, 3000);
+});

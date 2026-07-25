@@ -2669,3 +2669,17 @@ img {
         margin-top: 28px;
     }
 }
+
+/* Knieklachten page */
+.knee-hero-image { overflow:hidden; min-height:520px; background:#f4f2ee; }
+.knee-hero-image img { width:100%; height:100%; min-height:520px; object-fit:cover; object-position:42% center; filter:saturate(.72) contrast(.98); }
+.knee-pathway .detail-mini-card { min-height:190px; }
+.knee-conservative-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin-top:2rem; }
+.knee-conservative-grid article { border:1px solid rgba(90,110,94,.2); padding:1.5rem; background:#f7f5f0; }
+.knee-conservative-grid article>span { display:block; color:#5a6e5e; font-weight:600; margin-bottom:1rem; }
+.review-rotator { transition:opacity .45s ease, transform .45s ease; }
+.review-rotator.is-changing { opacity:0; transform:translateY(5px); }
+.review-rotator-dots { display:flex; justify-content:center; gap:6px; margin-top:1rem; }
+.review-rotator-dots span { width:6px; height:6px; border-radius:50%; background:#5a6e5e; opacity:.35; }
+.review-rotator-dots span.active { opacity:1; }
+@media (max-width:900px){ .knee-conservative-grid{grid-template-columns:1fr;} .knee-hero-image,.knee-hero-image img{min-height:360px;} }

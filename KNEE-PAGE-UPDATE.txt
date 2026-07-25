@@ -1,0 +1,9 @@
+ALIANZAFYSIO KNEE PAGE UPDATE
+
+Added:
+- knieklachten-haarlem.html
+- assets/home-knieklachten.jpg (the exact corrected image supplied by the owner)
+- Homepage knee card now links to the new page
+- Dynamic Google review banner with a 3-second fade framework
+
+Important: Only one verified review text was available in the website files, so no additional reviews were invented. Add verified review text and authors to the reviews array at the bottom of main.js to rotate multiple reviews.
