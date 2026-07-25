@@ -1,0 +1,11 @@
+ALIANZAFYSIO – NEKPIJN UPDATE
+
+Upload everything inside this ZIP to the root of the GitHub repository.
+
+New page: nekpijn-haarlem.html
+Updated: index.html, style.css, sitemap.xml, cornerstone page footer links
+New illustrations: assets/illustrations/nek-*.svg and nekpijn-hero.svg
+
+Check after deployment:
+https://alianzafysio.com/
+https://alianzafysio.com/nekpijn-haarlem.html

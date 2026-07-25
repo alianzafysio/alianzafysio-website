@@ -2399,3 +2399,207 @@ img {
 @media(max-width:900px){.complaints-grid,.pain-source-grid{grid-template-columns:1fr}.complaint-card{grid-template-columns:38% 1fr}.pain-source-card{display:grid;grid-template-columns:220px 1fr}.pain-source-card img{height:100%;aspect-ratio:auto;border-bottom:0;border-right:1px solid rgba(94,106,90,.14)}}
 @media(max-width:640px){.complaint-card,.complaint-card.muted,.pain-source-card{grid-template-columns:1fr}.complaint-card img{height:210px}.complaint-card.muted{display:block}.complaint-placeholder{height:110px}.pain-source-card img{height:auto;border-right:0;border-bottom:1px solid rgba(94,106,90,.14)}}
 
+
+
+/* Nekpijn cornerstone page */
+.neck-hero .detail-hero-image img{background:#F4F2EE;object-fit:contain}.neck-hero .detail-hero-image::before{background:#AEA896}.neck-hero-question{margin:-6px 0 18px;color:#5E6A5E;font-size:clamp(22px,3vw,34px);font-weight:500;letter-spacing:-.02em}.neck-recognition-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}.neck-recognition-grid>div{position:relative;padding:28px;border:1px solid rgba(94,106,90,.18);background:#fff}.neck-recognition-grid span,.neck-selfcare span{display:block;margin-bottom:18px;color:#AEA896;font-size:12px;font-weight:600;letter-spacing:.12em}.neck-recognition-grid h3{margin:0 0 9px}.neck-recognition-grid p{margin:0;font-size:14px}.neck-visual-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;margin-top:38px;padding:30px;background:#F4F2EE}.neck-visual-panel img{width:100%;height:auto}.neck-visual-panel h3{margin:0 0 12px;font-size:24px}.neck-visual-panel p{margin:0}.neck-quote{margin:36px 0 0;padding:32px 38px;border:0;border-left:4px solid #5E6A5E;background:#5E6A5E;color:#F4F2EE;font-size:clamp(21px,3vw,30px);line-height:1.45;font-weight:400}.neck-source-grid{display:grid;gap:22px;margin-top:36px}.neck-source-grid article{display:grid;grid-template-columns:250px 1fr;border:1px solid rgba(94,106,90,.18);background:#fff}.neck-source-grid img{width:100%;height:100%;object-fit:cover;border-right:1px solid rgba(94,106,90,.14)}.neck-source-grid article>div{padding:28px}.neck-source-grid h3{margin:0 0 13px;font-size:21px}.neck-source-grid ul,.neck-check-list{padding:0;margin:0 0 18px;list-style:none}.neck-source-grid li,.neck-check-list li{position:relative;padding:7px 0 7px 24px;color:#697169;line-height:1.55}.neck-source-grid li::before,.neck-check-list li::before{content:'✓';position:absolute;left:0;color:#5E6A5E;font-weight:700}.neck-source-grid p{margin:0;font-size:14px}.neck-split{display:grid;grid-template-columns:1fr .9fr;gap:44px;align-items:center}.neck-split img{width:100%;border:1px solid rgba(94,106,90,.16)}.neck-myth-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:32px 0}.neck-myth-grid article{padding:27px;border:1px solid rgba(94,106,90,.18)}.neck-myth-grid article:nth-child(even){background:#F4F2EE}.neck-myth-grid span{color:#5E6A5E;font-size:11px;font-weight:700;letter-spacing:.12em}.neck-myth-grid h3{margin:10px 0 8px}.neck-myth-grid p{margin:0;font-size:14px}.neck-statement{margin-top:34px;padding:38px;text-align:center;background:#F4F2EE}.neck-statement p{margin:0 0 8px;font-size:18px}.neck-statement strong{display:block;color:#485345;font-size:clamp(24px,3vw,36px);font-weight:500}.neck-case{margin-top:38px;padding:36px;border:1px solid rgba(94,106,90,.18);background:#F4F2EE}.neck-case>span{color:#5E6A5E;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.neck-case h3{margin:12px 0}.neck-case p{margin:0 0 12px}.neck-case small{color:#7b817b}.neck-selfcare{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.neck-selfcare article{padding:28px;border:1px solid rgba(94,106,90,.18);background:#fff}.neck-selfcare h3{margin:0 0 9px}.neck-selfcare p{margin:0;font-size:14px}.neck-signature{display:block;margin-top:18px;color:#5E6A5E;font-size:18px;font-weight:600}.neck-final{background:linear-gradient(135deg,#F4F2EE 0%,#e8ebe5 100%)}
+@media(max-width:980px){.neck-source-grid article{grid-template-columns:210px 1fr}.neck-split,.neck-visual-panel{grid-template-columns:1fr}.neck-split img{max-width:650px}.neck-selfcare{grid-template-columns:1fr}}
+@media(max-width:640px){.neck-recognition-grid,.neck-myth-grid{grid-template-columns:1fr}.neck-source-grid article{grid-template-columns:1fr}.neck-source-grid img{height:auto;border-right:0;border-bottom:1px solid rgba(94,106,90,.14)}.neck-visual-panel{padding:22px}.neck-quote{padding:25px}.neck-statement{padding:28px 22px}}
+
+
+/* === Nekpijn V3: storytelling + clinical depth === */
+.neck-v3{background:#fff}.neck-v3 .site-header{background:rgba(255,255,255,.96)}
+.v3-hero{position:relative;padding:145px 0 92px;background:linear-gradient(135deg,#fff 0%,#f7f5f1 62%,#ecefe9 100%);overflow:hidden}.v3-hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-220px;top:-190px;background:rgba(94,106,90,.07)}
+.v3-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(400px,.95fr);gap:70px;align-items:center;position:relative;z-index:1}.v3-hero h1{margin:15px 0 26px;color:#485345;font-size:clamp(46px,5.7vw,76px);font-weight:500;line-height:1.03;letter-spacing:-.048em}.v3-hero h1 em{font-style:normal;color:#5E6A5E}.v3-lead{max-width:720px;margin:0 0 31px;color:#687168;font-size:18px;line-height:1.75}.v3-hero-art{position:relative;padding:30px;background:#F4F2EE;border:1px solid rgba(94,106,90,.17)}.v3-hero-art:before{content:"";position:absolute;inset:20px -20px -20px 20px;border:1px solid #AEA896;z-index:-1}.v3-hero-art img{display:block;width:100%;height:auto}.v3-trust-inline{display:flex;flex-wrap:wrap;gap:11px 24px;margin-top:30px;color:#5E6A5E;font-size:12px;font-weight:600}.v3-trust-inline span:before{content:'✓';margin-right:7px}
+.v3-reassure{padding:88px 0;background:#5E6A5E;color:#F4F2EE;text-align:center}.v3-reassure .detail-kicker{color:#d9d8ce}.v3-reassure h2{max-width:900px;margin:12px auto 19px;color:#fff;font-size:clamp(31px,4.3vw,51px);font-weight:500;line-height:1.16;letter-spacing:-.03em}.v3-reassure p{max-width:790px;margin:auto;color:rgba(255,255,255,.82);font-size:17px;line-height:1.8}.v3-narrow{max-width:920px}
+.v3-section{padding:105px 0}.v3-alt{background:#F4F2EE}.v3-section-head{max-width:820px;margin-bottom:55px}.v3-section-head h2,.v3-two-col h2{margin:10px 0 18px;color:#485345;font-size:clamp(34px,4.5vw,54px);font-weight:500;line-height:1.12;letter-spacing:-.035em}.v3-section-head p,.v3-two-col p{color:#687168;font-size:17px;line-height:1.8}.v3-recognition{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.v3-recognition article{padding:30px 25px;border-top:2px solid #5E6A5E;background:#F8F7F4}.v3-recognition span,.v3-selfcare span{display:block;margin-bottom:25px;color:#AEA896;font-size:12px;font-weight:700;letter-spacing:.12em}.v3-recognition h3{margin:0 0 10px;color:#485345;font-size:20px}.v3-recognition p{margin:0;color:#687168;line-height:1.65}.v3-quote{max-width:900px;margin:55px auto 0;padding:0;border:0;text-align:center;color:#5E6A5E;font-size:clamp(25px,3.4vw,39px);font-weight:400;line-height:1.45}
+.v3-mechanism{display:grid;grid-template-columns:minmax(300px,.85fr) minmax(0,1.15fr);gap:70px;align-items:center;padding:64px 0;border-top:1px solid rgba(94,106,90,.18)}.v3-mechanism.reverse .v3-mechanism-art{order:2}.v3-mechanism-art{padding:30px;background:#fff;border:1px solid rgba(94,106,90,.15)}.v3-mechanism-art img{display:block;width:100%;height:auto}.v3-mechanism-copy h3{margin:10px 0 17px;color:#485345;font-size:clamp(27px,3.2vw,40px);font-weight:500;line-height:1.2}.v3-mechanism-copy p{color:#687168;font-size:16px;line-height:1.78}.v3-mechanism-copy ul,.v3-feature-grid ul,.v3-redflags{padding:0;margin:22px 0;list-style:none}.v3-mechanism-copy li,.v3-feature-grid li,.v3-redflags li{position:relative;padding:7px 0 7px 25px;color:#687168;line-height:1.55}.v3-mechanism-copy li:before,.v3-feature-grid li:before,.v3-redflags li:before{content:'✓';position:absolute;left:0;color:#5E6A5E;font-weight:700}.v3-insight{margin-top:25px;padding:21px 24px;border-left:3px solid #5E6A5E;background:#fff;color:#687168;line-height:1.65}.v3-insight strong{color:#485345}
+.v3-feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}.v3-feature-grid article{overflow:hidden;border:1px solid rgba(94,106,90,.16);background:#fff}.v3-feature-grid img{display:block;width:100%;aspect-ratio:16/10;object-fit:contain;background:#F4F2EE;border-bottom:1px solid rgba(94,106,90,.14)}.v3-feature-grid article>div{padding:32px}.v3-feature-grid h3{margin:0 0 13px;color:#485345;font-size:27px;font-weight:500}.v3-feature-grid p{color:#687168;line-height:1.75}
+.v3-two-col{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.v3-myth{margin-top:28px;padding:27px;border-left:4px solid #5E6A5E;background:#fff;color:#485345;font-size:20px;line-height:1.55}.v3-practical{display:grid;grid-template-columns:1fr 1fr;gap:16px}.v3-practical article{padding:25px;background:#fff;border:1px solid rgba(94,106,90,.14)}.v3-practical h3{margin:0 0 8px;color:#485345;font-size:18px}.v3-practical p{margin:0;font-size:14px;line-height:1.6}
+.v3-method{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:0;margin:0;list-style:none;border:1px solid rgba(94,106,90,.18)}.v3-method li{padding:34px 28px;border-right:1px solid rgba(94,106,90,.18)}.v3-method li:last-child{border-right:0}.v3-method span{display:block;color:#AEA896;font-size:12px;font-weight:700;letter-spacing:.12em}.v3-method h3{margin:25px 0 10px;color:#485345;font-size:21px}.v3-method p{margin:0;color:#687168;line-height:1.65}.v3-statement{margin-top:48px;padding:42px;text-align:center;background:#5E6A5E;color:#fff}.v3-statement span{display:block;margin-bottom:8px;color:rgba(255,255,255,.7)}.v3-statement strong{display:block;font-size:clamp(25px,3.5vw,41px);font-weight:500}
+.v3-treatment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.v3-treatment-grid article{padding:28px;border:1px solid rgba(94,106,90,.16);background:#fff}.v3-treatment-grid h3{margin:0 0 10px;color:#485345;font-size:19px}.v3-treatment-grid p{margin:0;color:#687168;line-height:1.65}.v3-case{max-width:900px;margin:50px auto 0;padding:38px;background:#fff;border:1px solid rgba(94,106,90,.17)}.v3-case h3{margin:12px 0;color:#485345;font-size:27px}.v3-case p{color:#687168;line-height:1.8}.v3-case small{color:#7b817b}
+.v3-safety h3{margin:17px 0;color:#485345;font-size:24px}.v3-redflags{margin-top:16px}.v3-selfcare{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.v3-selfcare article{padding:32px;background:#fff;border-top:2px solid #5E6A5E}.v3-selfcare h3{margin:0 0 10px;color:#485345;font-size:21px}.v3-selfcare p{margin:0;color:#687168;line-height:1.65}.v3-final{padding:95px 0;background:linear-gradient(135deg,#e9ece6 0%,#F4F2EE 72%)}.v3-final-inner{display:flex;align-items:center;justify-content:space-between;gap:55px}.v3-final h2{margin:10px 0 14px;color:#485345;font-size:clamp(37px,4.7vw,57px);font-weight:500;letter-spacing:-.035em}.v3-final p{max-width:720px;color:#687168;line-height:1.75}.v3-final strong{display:block;margin-top:19px;color:#5E6A5E;font-size:18px}
+@media(max-width:1000px){.v3-hero-grid{grid-template-columns:1fr;gap:50px}.v3-hero-art{max-width:700px}.v3-recognition{grid-template-columns:repeat(2,1fr)}.v3-mechanism,.v3-two-col{grid-template-columns:1fr;gap:38px}.v3-mechanism.reverse .v3-mechanism-art{order:0}.v3-method{grid-template-columns:repeat(2,1fr)}.v3-method li:nth-child(2){border-right:0}.v3-method li:nth-child(-n+2){border-bottom:1px solid rgba(94,106,90,.18)}.v3-treatment-grid{grid-template-columns:repeat(2,1fr)}.v3-final-inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:680px){.v3-hero{padding:112px 0 70px}.v3-hero h1{font-size:42px}.v3-hero-art{padding:14px}.v3-hero-art:before{inset:10px -9px -10px 9px}.v3-section,.v3-reassure,.v3-final{padding:72px 0}.v3-recognition,.v3-feature-grid,.v3-practical,.v3-treatment-grid,.v3-selfcare,.v3-method{grid-template-columns:1fr}.v3-method li{border-right:0;border-bottom:1px solid rgba(94,106,90,.18)!important}.v3-method li:last-child{border-bottom:0!important}.v3-mechanism{padding:45px 0}.v3-mechanism-art{padding:16px}.v3-feature-grid article>div,.v3-case{padding:25px}.v3-statement{padding:30px 20px}.v3-trust-inline{display:grid}}
+
+/* Nekpijn photo edition — realistic imagery replaces the former SVG set */
+.photo-version .v3-hero-art,
+.photo-version .v3-mechanism-art,
+.photo-version .v3-feature-card > img {
+  overflow: hidden;
+  background: #ecebe7;
+}
+
+.photo-version .v3-hero-art img {
+  width: 100%;
+  height: 100%;
+  min-height: 460px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.photo-version .v3-mechanism-art img {
+  width: 100%;
+  height: clamp(290px, 34vw, 480px);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.photo-version .v3-feature-card > img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.photo-version .v3-feature-card:first-child > img {
+  object-position: 50% 28%;
+}
+
+.photo-version .v3-feature-card:last-child > img {
+  object-position: 50% 22%;
+}
+
+@media (max-width: 900px) {
+  .photo-version .v3-hero-art img {
+    min-height: 360px;
+  }
+  .photo-version .v3-mechanism-art img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 640px) {
+  .photo-version .v3-hero-art img {
+    min-height: 300px;
+  }
+  .photo-version .v3-feature-card > img {
+    height: 280px;
+  }
+}
+
+/* Alianza monochrome anatomy set — compact editorial presentation */
+.photo-version .v3-hero-art {
+  max-width: 520px;
+  justify-self: end;
+  padding: 18px;
+  background: #F4F2EE;
+}
+.photo-version .v3-hero-art img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+}
+.photo-version .v3-mechanism {
+  grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+  gap: 58px;
+}
+.photo-version .v3-mechanism-art {
+  width: 100%;
+  max-width: 360px;
+  justify-self: center;
+  padding: 14px;
+  background: #F4F2EE;
+}
+.photo-version .v3-mechanism-art img {
+  width: 100%;
+  height: auto;
+  max-height: 390px;
+  object-fit: contain;
+}
+.photo-version .v3-feature-card > img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  padding: 12px;
+  background: #F4F2EE;
+}
+@media (max-width: 1000px) {
+  .photo-version .v3-hero-art { justify-self: start; max-width: 500px; }
+  .photo-version .v3-mechanism { grid-template-columns: 1fr; }
+  .photo-version .v3-mechanism-art { max-width: 420px; }
+}
+@media (max-width: 640px) {
+  .photo-version .v3-hero-art { max-width: 100%; padding: 10px; }
+  .photo-version .v3-mechanism-art { max-width: 330px; padding: 10px; }
+  .photo-version .v3-feature-card > img { height: 210px; }
+}
+
+
+/* 2026 photo update: homepage complaint cards and Rugpijn hero */
+.complaint-card img {
+  filter: saturate(.22) sepia(.05);
+  object-position: center;
+}
+.complaint-card.muted {
+  grid-template-columns: 42% 1fr;
+}
+.rug-hero .detail-hero-image {
+  overflow: hidden;
+  background: #F4F2EE;
+}
+.rug-hero .detail-hero-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  object-fit: cover;
+  object-position: center 42%;
+  padding: 0;
+  filter: saturate(.18) sepia(.04);
+}
+@media (max-width: 900px) {
+  .complaint-card.muted { grid-template-columns: 38% 1fr; }
+  .rug-hero .detail-hero-image img { min-height: 380px; }
+}
+@media (max-width: 640px) {
+  .complaint-card.muted { grid-template-columns: 1fr; }
+  .rug-hero .detail-hero-image img { min-height: 300px; }
+}
+
+/* 2026-07 final image polish: clean Nekpijn portrait and knee crop */
+.photo-version .v3-hero-art {
+  width: min(100%, 520px);
+  max-width: 520px;
+  aspect-ratio: 4 / 5;
+  padding: 0;
+  overflow: hidden;
+  background: #F4F2EE;
+}
+.photo-version .v3-hero-art::before {
+  display: none;
+}
+.photo-version .v3-hero-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center 38%;
+}
+.complaint-card[href="nekpijn-haarlem.html"] img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+  padding: 0;
+}
+.complaint-card.muted img {
+  object-position: center center;
+}
+@media (max-width: 1000px) {
+  .photo-version .v3-hero-art {
+    width: min(100%, 500px);
+    max-width: 500px;
+  }
+}
+@media (max-width: 640px) {
+  .photo-version .v3-hero-art {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+}

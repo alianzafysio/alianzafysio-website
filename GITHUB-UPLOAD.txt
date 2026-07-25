@@ -1,0 +1,9 @@
+ALIANZAFYSIO — GITHUB UPLOAD
+
+Upload every file and folder in this package to the root of the existing GitHub repository, replacing the corresponding existing files.
+
+Latest corrections:
+1. The Nekpijn photo now fills both the homepage card and the Nekpijn hero without the previous inner frame or logo.
+2. The horizontal line at the top of the Knieklachten homepage photo has been removed.
+
+Do not upload the ZIP itself into the repository. Extract it first and upload its contents.
