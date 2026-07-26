@@ -2683,3 +2683,12 @@ img {
 .review-rotator-dots span { width:6px; height:6px; border-radius:50%; background:#5a6e5e; opacity:.35; }
 .review-rotator-dots span.active { opacity:1; }
 @media (max-width:900px){ .knee-conservative-grid{grid-template-columns:1fr;} .knee-hero-image,.knee-hero-image img{min-height:360px;} }
+
+/* Schouderklachten page — AlianzaFysio v4.2 */
+.shoulder-hero-image{overflow:hidden;min-height:520px;background:#f4f2ee}
+.shoulder-hero-image img{width:100%;height:100%;min-height:520px;object-fit:cover;object-position:center;filter:saturate(.72) contrast(.98)}
+.shoulder-page .neck-source-grid img,.shoulder-page .neck-split img{filter:saturate(.72) contrast(.98)}
+.shoulder-page .shoulder-return{margin-top:38px;padding-top:30px;border-top:1px solid rgba(94,106,90,.18)}
+.shoulder-final{background:linear-gradient(135deg,#F4F2EE 0%,#e8ebe5 100%)}
+@media(max-width:900px){.shoulder-hero-image,.shoulder-hero-image img{min-height:360px}}
+@media(max-width:640px){.shoulder-hero-image,.shoulder-hero-image img{min-height:300px}.shoulder-page .neck-source-grid img{aspect-ratio:4/3;object-fit:cover}}
