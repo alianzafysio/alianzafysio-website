@@ -1,0 +1,10 @@
+ALIANZAFYSIO WEB V4.3 – TMJ / KAAKKLACHTEN
+
+Added:
+- tmj-kaakklachten-haarlem.html
+- TMJ card on homepage
+- TMJ links in navigation and footer
+- TMJ page in sitemap.xml
+- assets/tmj-photos/ with only the approved images and user-supplied anatomy/reference images
+
+Upload all files and folders to the root of the GitHub repository, replacing existing files.
