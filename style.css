@@ -1,8 +1,13 @@
+/* -------------------------------------------------------------
+   LOCAL MONTSERRAT FONTS
+   ------------------------------------------------------------- */
+
 @font-face {
     font-family: "Montserrat";
     src: url("assets/fonts/Montserrat-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -10,6 +15,7 @@
     src: url("assets/fonts/Montserrat-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -17,6 +23,7 @@
     src: url("assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -24,10 +31,13 @@
     src: url("assets/fonts/Montserrat-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
+
 /* -------------------------------------------------------------
    ALIANZA FYSIO - PREMIUM STYLING
-   Brand Guidelines: Style: Minimal, Editorial, Calm, Refined
+   Brand Guidelines:
+   Style: Minimal, Editorial, Calm, Refined
    ------------------------------------------------------------- */
 
 /* 1. Design Tokens & CSS Variables */
