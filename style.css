@@ -301,7 +301,7 @@ img {
 
 /* Scroll shrink transformation for header logo image wrapper */
 .header-scrolled .logo-img-wrapper {
-    eight: 75px;
+    height: 75px;
     width: 220px;
 }
 
