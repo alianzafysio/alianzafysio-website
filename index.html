@@ -836,7 +836,12 @@
 <div class="form-container-box">
 <h3 class="form-title">Maak een afspraak</h3>
 <p class="form-subtitle">Vul het formulier in en wij nemen spoedig contact met u op om uw zitting te plannen.</p>
-<form action="#" id="appointment-form" method="POST" novalidate="">
+<form action="https://formspree.io/f/xwvgzqjd"
+      id="appointment-form"
+      method="POST"
+      novalidate>
+   <input type="hidden" name="_subject" value="Nieuwe afspraak via AlianzaFysio">
+    <input type="hidden" name="_language" value="nl">
 <div class="form-grid">
 <div class="form-group">
 <label class="form-label" for="form-name">Volledige Naam *</label>
