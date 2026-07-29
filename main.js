@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    if (appointmentForm) appointmentForm.addEventListener('submit', (e) => {
+    if (appointmentForm) appointmentForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         let isValid = true;
@@ -202,19 +202,42 @@ document.addEventListener('DOMContentLoaded', () => {
             consentInput.closest('.form-checkbox-group').classList.remove('has-error');
         }
 
-        // If Valid, show Success Overlay
-        if (isValid) {
+        // If Valid, send to Formspree
+if (isValid) {
+
+    const submitButton = appointmentForm.querySelector('.btn-submit');
+    submitButton.disabled = true;
+    submitButton.textContent = "Verzenden...";
+
+    try {
+
+        const response = await fetch(appointmentForm.action, {
+            method: "POST",
+            body: new FormData(appointmentForm),
+            headers: {
+                "Accept": "application/json"
+            }
+        });
+
+        if (response.ok) {
+
             successOverlay.classList.add('show-success');
-            
-            // Console log simulation of data submission
-            console.log('Form Submitted successfully!', {
-                name: nameInput.value,
-                phone: phoneInput.value,
-                email: emailInput.value,
-                service: document.getElementById('form-service').value,
-                message: document.getElementById('form-message').value
-            });
+
+        } else {
+
+            alert("Er is iets misgegaan. Probeer het opnieuw.");
+
         }
+
+    } catch (error) {
+
+        alert("Er kon geen verbinding worden gemaakt. Probeer het later opnieuw.");
+
+    }
+
+    submitButton.disabled = false;
+    submitButton.textContent = "Verzenden";
+}
     });
 
     // Reset Form button action
