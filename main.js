@@ -359,4 +359,3 @@ if (reviewText && reviewAuthor && reviewCard && reviewDots) {
         startReviewRotation();
     });
 }
-});
