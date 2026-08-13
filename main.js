@@ -264,11 +264,10 @@ if (isValid) {
 const reviewText = document.getElementById('rotating-review-text');
 const reviewAuthor = document.getElementById('rotating-review-author');
 const reviewCard = document.querySelector('.review-rotator');
-const reviewDots = document.getElementById('review-rotator-dots');
 
 const reviews = [
     {
-        text: "As an expat new to the Netherlands, I wasn't familiar with how physiotherapy works here. Francisco took the time to explain the direct access system and helped me discover that I actually had six physiotherapy sessions covered by my health insurance. They are highly skilled, knowledgeable, and genuinely helpful. I highly recommend them!",
+        text: "As an expat new to the Netherlands, I wasn't familiar with how physiotherapy works here. Francisco took the time to explain the direct access system and helped me discover that I actually had six physiotherapy sessions covered by my health insurance.",
         author: "Beatriz Nicolas"
     },
     {
@@ -284,78 +283,41 @@ const reviews = [
         author: "Gido Hendriks"
     },
     {
-        text: "100% aanbevolen! Ik had veel last van hoofdpijn en rugpijn en Francisco heeft mij de afgelopen weken behandeld. Sindsdien heb ik geen enkele aanval meer gehad. Hij gaf me ook goede adviezen die passen bij mijn levensstijl.",
+        text: "100% aanbevolen! Ik had veel last van hoofdpijn en rugpijn. Sinds mijn behandeling heb ik geen enkele aanval meer gehad. Ook kreeg ik goede adviezen en oefeningen die passen bij mijn levensstijl.",
         author: "César Alberto Mardomingo Alonso"
     },
     {
-        text: "Heel veel kennis! Ik heb vanwege mijn lengte altijd rugklachten gehad, maar Javier gaf mij de juiste ondersteuning en adviezen. Dat heeft mij enorm geholpen! Daarnaast is hij erg vriendelijk en betrokken.",
+        text: "Heel veel kennis! Ik heb vanwege mijn lengte altijd rugklachten gehad, maar ik kreeg precies de juiste ondersteuning en adviezen. Dat heeft mij enorm geholpen!",
         author: "Maarten Perdok"
     },
     {
-        text: "Uitstekende ervaring bij AlianzaFysio! Er wordt echt de tijd genomen om naar je te luisteren en je klachten goed te analyseren. Het is niet alleen oefeningen meegeven; de behandeling is hands-on, professioneel en effectief.",
+        text: "Uitstekende ervaring bij AlianzaFysio! Er wordt echt de tijd genomen om naar je te luisteren. De behandeling is hands-on, professioneel en effectief.",
         author: "Antonio José Pastor Belda"
     },
     {
-        text: "Ik had last van nekpijn door een slechte werkhouding. Francisco heeft mij geholpen met dry needling en oefeningen voor thuis voorgeschreven. Heel erg bedankt.",
+        text: "Ik had last van nekpijn door een slechte werkhouding. Francisco heeft mij geholpen met dry needling en oefeningen voor thuis. Heel erg bedankt.",
         author: "Dingena Monshouwer"
     }
 ];
 
 let currentReview = 0;
-let reviewInterval;
 
-function createReviewDots() {
-    reviewDots.innerHTML = '';
+function showNextReview() {
 
-    reviews.forEach((review, index) => {
-        const dot = document.createElement('span');
+    currentReview = (currentReview + 1) % reviews.length;
 
-        if (index === 0) {
-            dot.classList.add('active');
-        }
-
-        reviewDots.appendChild(dot);
-    });
-}
-
-function showReview(index) {
     reviewCard.classList.add('is-changing');
 
     setTimeout(() => {
-        reviewText.textContent = `“${reviews[index].text}”`;
-        reviewAuthor.textContent = `— ${reviews[index].author}`;
 
-        const dots = reviewDots.querySelectorAll('span');
-
-        dots.forEach((dot, dotIndex) => {
-            dot.classList.toggle('active', dotIndex === index);
-        });
+        reviewText.textContent = `“${reviews[currentReview].text}”`;
+        reviewAuthor.textContent = `— ${reviews[currentReview].author}`;
 
         reviewCard.classList.remove('is-changing');
-    }, 350);
+
+    }, 300);
 }
 
-function nextReview() {
-    currentReview = (currentReview + 1) % reviews.length;
-    showReview(currentReview);
-}
-
-function startReviewRotation() {
-    reviewInterval = setInterval(nextReview, 7000);
-}
-
-function stopReviewRotation() {
-    clearInterval(reviewInterval);
-}
-
-if (reviewText && reviewAuthor && reviewCard && reviewDots) {
-    createReviewDots();
-    startReviewRotation();
-
-    reviewCard.addEventListener('mouseenter', stopReviewRotation);
-
-    reviewCard.addEventListener('mouseleave', () => {
-        stopReviewRotation();
-        startReviewRotation();
-    });
+if (reviewText && reviewAuthor && reviewCard) {
+    setInterval(showNextReview, 4000);
 }
