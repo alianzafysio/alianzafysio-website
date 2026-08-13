@@ -257,23 +257,106 @@ if (isValid) {
 
 });
 
-// Google review banner: fade every 3 seconds. Add verified reviews to this array as they are received.
-document.addEventListener('DOMContentLoaded', () => {
-  const card = document.querySelector('.review-rotator');
-  const text = document.getElementById('rotating-review-text');
-  const author = document.getElementById('rotating-review-author');
-  if (!card || !text || !author) return;
-  const reviews = [
-    { text: '“Zeer betrouwbaar en goede persoonlijke zorg! Absolute aanrader.”', author: '— Lotte Bos' }
-  ];
-  let index = 0;
-  window.setInterval(() => {
-    card.classList.add('is-changing');
-    window.setTimeout(() => {
-      index = (index + 1) % reviews.length;
-      text.textContent = reviews[index].text;
-      author.textContent = reviews[index].author;
-      card.classList.remove('is-changing');
-    }, 450);
-  }, 3000);
+// ---------------------------------------------------------
+// GOOGLE REVIEWS ROTATOR
+// ---------------------------------------------------------
+
+const reviewText = document.getElementById('rotating-review-text');
+const reviewAuthor = document.getElementById('rotating-review-author');
+const reviewCard = document.querySelector('.review-rotator');
+const reviewDots = document.getElementById('review-rotator-dots');
+
+const reviews = [
+    {
+        text: "As an expat new to the Netherlands, I wasn't familiar with how physiotherapy works here. Francisco took the time to explain the direct access system and helped me discover that I actually had six physiotherapy sessions covered by my health insurance. They are highly skilled, knowledgeable, and genuinely helpful. I highly recommend them!",
+        author: "Beatriz Nicolas"
+    },
+    {
+        text: "Zeer betrouwbaar en goede persoonlijke zorg! Absolute aanrader.",
+        author: "Lotte Bos"
+    },
+    {
+        text: "Francisco heeft mij enorm goed geholpen! Precies de hulp die ik nodig had, waardoor ik snel weer alles kon doen!",
+        author: "Sepp Niemeijer"
+    },
+    {
+        text: "Fantastisch geholpen. Ik voelde me altijd veilig en gehoord.",
+        author: "Gido Hendriks"
+    },
+    {
+        text: "100% aanbevolen! Ik had veel last van hoofdpijn en rugpijn en Francisco heeft mij de afgelopen weken behandeld. Sindsdien heb ik geen enkele aanval meer gehad. Hij gaf me ook goede adviezen die passen bij mijn levensstijl.",
+        author: "César Alberto Mardomingo Alonso"
+    },
+    {
+        text: "Heel veel kennis! Ik heb vanwege mijn lengte altijd rugklachten gehad, maar Javier gaf mij de juiste ondersteuning en adviezen. Dat heeft mij enorm geholpen! Daarnaast is hij erg vriendelijk en betrokken.",
+        author: "Maarten Perdok"
+    },
+    {
+        text: "Uitstekende ervaring bij AlianzaFysio! Er wordt echt de tijd genomen om naar je te luisteren en je klachten goed te analyseren. Het is niet alleen oefeningen meegeven; de behandeling is hands-on, professioneel en effectief.",
+        author: "Antonio José Pastor Belda"
+    },
+    {
+        text: "Ik had last van nekpijn door een slechte werkhouding. Francisco heeft mij geholpen met dry needling en oefeningen voor thuis voorgeschreven. Heel erg bedankt.",
+        author: "Dingena Monshouwer"
+    }
+];
+
+let currentReview = 0;
+let reviewInterval;
+
+function createReviewDots() {
+    reviewDots.innerHTML = '';
+
+    reviews.forEach((review, index) => {
+        const dot = document.createElement('span');
+
+        if (index === 0) {
+            dot.classList.add('active');
+        }
+
+        reviewDots.appendChild(dot);
+    });
+}
+
+function showReview(index) {
+    reviewCard.classList.add('is-changing');
+
+    setTimeout(() => {
+        reviewText.textContent = `“${reviews[index].text}”`;
+        reviewAuthor.textContent = `— ${reviews[index].author}`;
+
+        const dots = reviewDots.querySelectorAll('span');
+
+        dots.forEach((dot, dotIndex) => {
+            dot.classList.toggle('active', dotIndex === index);
+        });
+
+        reviewCard.classList.remove('is-changing');
+    }, 350);
+}
+
+function nextReview() {
+    currentReview = (currentReview + 1) % reviews.length;
+    showReview(currentReview);
+}
+
+function startReviewRotation() {
+    reviewInterval = setInterval(nextReview, 7000);
+}
+
+function stopReviewRotation() {
+    clearInterval(reviewInterval);
+}
+
+if (reviewText && reviewAuthor && reviewCard && reviewDots) {
+    createReviewDots();
+    startReviewRotation();
+
+    reviewCard.addEventListener('mouseenter', stopReviewRotation);
+
+    reviewCard.addEventListener('mouseleave', () => {
+        stopReviewRotation();
+        startReviewRotation();
+    });
+}
 });
