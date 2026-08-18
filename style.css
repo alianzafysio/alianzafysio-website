@@ -1463,26 +1463,36 @@ img {
     line-height: 1.7;
 }
 
-/* 11. Footer Section */
+/* -------------------------------------------------------------
+   11. FOOTER SECTION
+   ------------------------------------------------------------- */
+
 .site-footer {
     background-color: var(--color-charcoal);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top: 45px;
+    padding-bottom: 0;
 }
+
+
+/* Main 3-column layout */
 
 .footer-top-grid {
     display: grid;
     grid-template-columns: 1.1fr 1fr 1fr;
     gap: 70px;
     align-items: start;
-    padding: 45px 0 35px;
+    padding: 35px 0 35px;
 }
+
 .footer-col-brand,
 .footer-col-nav,
 .footer-col-contact {
     min-width: 0;
 }
+
+
+/* COLUMN 1 — Brand */
 
 .footer-col-brand {
     display: flex;
@@ -1490,8 +1500,13 @@ img {
     gap: 20px;
 }
 
+.footer-logo {
+    display: none;
+}
+
 .footer-logos {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 24px;
 }
@@ -1504,78 +1519,6 @@ img {
 .footer-logos .hb-logo {
     max-width: 130px;
     height: auto;
-}
-
-.footer-brand-statement {
-    max-width: 320px;
-    margin: 0;
-    line-height: 1.6;
-}
-
-.footer-social-wrapper {
-    display: flex;
-    gap: 12px;
-}
-
-.footer-col-title {
-    margin: 0 0 18px;
-}
-
-.footer-links-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 24px;
-}
-
-.footer-links-list li {
-    margin: 0;
-}
-
-.footer-contact-info {
-    margin: 0 0 10px;
-}
-
-.footer-business-details {
-    margin-top: 20px;
-    font-size: 11px;
-    line-height: 1.6;
-    opacity: 0.5;
-}
-
-.footer-bottom-strip {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 30px;
-
-    padding: 22px 0;
-
-    border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-.footer-legal-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px 28px;
-}
-.footer-logo {
-    display: none;
-}
-.footer-logos {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.hb-logo {
-    width: 180px;
-    height: auto;
     object-fit: contain;
 }
 
@@ -1583,9 +1526,9 @@ img {
     font-size: 13px;
     font-style: italic;
     opacity: 0.65;
-    max-width: 360px;
+    max-width: 320px;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin: 0;
 }
 
 .footer-social-wrapper {
@@ -1613,17 +1556,30 @@ img {
     height: 18px;
 }
 
+
+/* COLUMN 2 — Navigation */
+
 .footer-col-title {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    margin-bottom: 25px;
+    margin: 0 0 18px;
     color: var(--color-stone);
     font-weight: 600;
 }
 
+.footer-links-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 24px;
+}
+
 .footer-links-list li {
-    margin-bottom: 12px;
+    margin: 0;
 }
 
 .footer-links-list a {
@@ -1637,11 +1593,13 @@ img {
     padding-left: 4px;
 }
 
+
+/* COLUMN 3 — Contact */
+
 .footer-contact-info {
     font-size: 13px;
     color: rgba(244, 242, 238, 0.82);
-    opacity: 1;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
 .footer-contact-info a {
@@ -1653,25 +1611,37 @@ img {
     color: #F4F2EE;
 }
 
+.footer-business-details {
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 1.6;
+    opacity: 0.5;
+}
+
+
+/* Bottom legal strip */
+
 .footer-bottom-strip {
-    border-top: 1px solid rgba(255, 255, 255, 0.07);
-    padding-top: 30px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 22px 40px;
+    gap: 30px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+    padding: 22px 0;
 }
 
 .copyright-text {
     font-size: 12px;
     opacity: 0.45;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .footer-legal-links {
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 18px 28px;
 }
 
 .footer-legal-links a {
@@ -1684,6 +1654,46 @@ img {
     color: var(--color-stone);
 }
 
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .footer-top-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 35px 0 30px;
+    }
+
+    .footer-links-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom-strip {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .footer-links-list {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logos {
+        gap: 18px;
+    }
+
+    .footer-logos .site-logo-img,
+    .footer-logos .hb-logo {
+        max-width: 115px;
+    }
+}
 /* 11a. Tarieven Section */
 .tarieven-section {
     background-color: var(--color-white);
