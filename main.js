@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 5. Navigation Scroll Indicator Highlight ---
     // Uses an IntersectionObserver to detect which section is currently active
-    const sectionIds = ['home', 'about', 'treatments', 'tarieven', 'vergoeding', 'contact'];
-    const sections = sectionIds.map(id => document.getElementById(id)).filter(el => el !== null);
+    const sectionIds = ['home', 'about', 'treatments', 'klachten', 'tarieven', 'contact'];
+const sections = sectionIds.map(id => document.getElementById(id)).filter(el => el !== null);
 
     const navObserverOptions = {
         root: null,
