@@ -3059,3 +3059,6 @@ img {
         border-bottom: 1px solid rgba(94, 106, 90, 0.18);
     }
 }
+.complaint-card {
+    border: none;
+}
