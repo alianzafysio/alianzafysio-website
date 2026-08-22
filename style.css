@@ -709,7 +709,71 @@ img {
 .about-btn-wrap {
     margin-top: 35px;
 }
+/* -------------------------------------------------------------
+   ABOUT SECTION BALANCE
+   ------------------------------------------------------------- */
 
+.grid-3-about {
+    align-items: stretch;
+}
+
+.about-left-col,
+.about-middle-col,
+.about-right-col {
+    min-width: 0;
+}
+
+.about-left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-left-col .about-intro-text {
+    max-width: 95%;
+}
+
+.about-left-col .about-btn-wrap {
+    margin-top: 22px;
+}
+
+.about-middle-col {
+    align-items: stretch;
+}
+
+.focus-card {
+    height: 100%;
+}
+
+.about-right-col {
+    display: flex;
+}
+
+.about-right-col .contact-details-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 34px 34px 30px;
+}
+
+.about-right-col .sub-headline {
+    margin-bottom: 16px;
+}
+
+.about-right-col .focus-card-title {
+    margin-bottom: 16px;
+}
+
+.about-right-col .about-intro-text {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.about-right-col .about-btn-wrap {
+    margin-top: auto;
+    padding-top: 20px;
+}
 /* Middle Col: Focus Cards */
 .grid-2-cards {
     display: grid;
