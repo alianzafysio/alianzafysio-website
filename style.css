@@ -710,11 +710,11 @@ img {
     margin-top: 35px;
 }
 /* -------------------------------------------------------------
-   ABOUT SECTION BALANCE
+   ABOUT SECTION – BALANCED COLUMNS
    ------------------------------------------------------------- */
 
 .grid-3-about {
-    align-items: stretch;
+    align-items: start;
 }
 
 .about-left-col,
@@ -723,10 +723,9 @@ img {
     min-width: 0;
 }
 
+/* LEFT COLUMN */
 .about-left-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: block;
 }
 
 .about-left-col .about-intro-text {
@@ -734,45 +733,56 @@ img {
 }
 
 .about-left-col .about-btn-wrap {
-    margin-top: 22px;
+    margin-top: 28px;
 }
 
+
+/* MIDDLE CARDS */
 .about-middle-col {
-    align-items: stretch;
+    align-items: start;
 }
 
 .focus-card {
-    height: 100%;
+    height: auto;
 }
 
+.focus-card-content {
+    padding: 28px 30px 30px;
+}
+
+.focus-card-desc {
+    line-height: 1.55;
+}
+
+
+/* RIGHT HEALTHY BASTARDS CARD */
 .about-right-col {
-    display: flex;
+    display: block;
 }
 
 .about-right-col .contact-details-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-    padding: 34px 34px 30px;
+    display: block;
+    height: auto;
+    padding: 38px 40px;
 }
 
 .about-right-col .sub-headline {
-    margin-bottom: 16px;
+    display: block;
+    margin-bottom: 18px;
 }
 
 .about-right-col .focus-card-title {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .about-right-col .about-intro-text {
-    margin-bottom: 20px;
-    line-height: 1.7;
+    margin-bottom: 24px;
+    line-height: 1.65;
 }
 
 .about-right-col .about-btn-wrap {
-    margin-top: auto;
-    padding-top: 20px;
+    margin-top: 28px;
+    padding-top: 0;
 }
 /* Middle Col: Focus Cards */
 .grid-2-cards {
