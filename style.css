@@ -3062,3 +3062,17 @@ img {
 .complaint-card {
     border: none;
 }
+/* Footer appointment link */
+.footer-book-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: var(--color-stone);
+}
+
+.footer-book-link:hover {
+    color: var(--color-white);
+}
