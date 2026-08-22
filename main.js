@@ -267,7 +267,7 @@ const reviewCard = document.querySelector('.review-rotator');
 
 const reviews = [
     {
-        text: "As an expat new to the Netherlands, I wasn't familiar with how physiotherapy works here. Francisco took the time to explain the direct access system and helped me discover that I actually had six physiotherapy sessions covered by my health insurance.",
+        text: "As an expat new to the Netherlands, I wasn't familiar with how physiotherapy works here. Francisco took the time to explain the direct access system and helped me discover that I actually had six physiotherapy sessions covered by my health insurance. They are highly skilled, knowledgeable, and genuinely helpful. I highly recommend them!",
         author: "Beatriz Nicolas"
     },
     {
@@ -283,20 +283,24 @@ const reviews = [
         author: "Gido Hendriks"
     },
     {
-        text: "100% aanbevolen! Ik had veel last van hoofdpijn en rugpijn. Sinds mijn behandeling heb ik geen enkele aanval meer gehad. Ook kreeg ik goede adviezen en oefeningen die passen bij mijn levensstijl.",
+        text: "100% recommended! I had really bad headaches and back pain, and Francisco treated me for the last several weeks and I haven’t had any other crisis since then. He gave me good advice that adapts to my lifestyle and access to an app with all my recovery exercises.",
         author: "César Alberto Mardomingo Alonso"
     },
     {
-        text: "Heel veel kennis! Ik heb vanwege mijn lengte altijd rugklachten gehad, maar ik kreeg precies de juiste ondersteuning en adviezen. Dat heeft mij enorm geholpen!",
-        author: "Maarten Perdok"
-    },
-    {
-        text: "Uitstekende ervaring bij AlianzaFysio! Er wordt echt de tijd genomen om naar je te luisteren. De behandeling is hands-on, professioneel en effectief.",
+        text: "Uitstekende ervaring bij AlianzaFysio! Er wordt echt de tijd genomen om naar je te luisteren en goed te analyseren wat je nodig hebt. Het is niet zomaar een fysio die je alleen oefeningen geeft; de behandeling is hands-on, professioneel en effectief.",
         author: "Antonio José Pastor Belda"
     },
     {
-        text: "Ik had last van nekpijn door een slechte werkhouding. Francisco heeft mij geholpen met dry needling en oefeningen voor thuis. Heel erg bedankt.",
-        author: "Dingena Monshouwer"
+        text: "Na een auto-ongeluk kon ik heel snel terecht bij Francisco, die een belangrijk onderdeel is geweest van mijn herstel. Hij is super kundig en zorgde snel voor verlichting, mede door zijn geweldige massage en gerichte actieplan. Hij geeft goed inzicht in wat je nodig hebt om weer goed op de been te komen. Zou zeker aanbevelen!",
+        author: "Gina Mara"
+    },
+    {
+        text: "Maartje is the best physiotherapist I’ve been to in the Netherlands. She takes the time to truly listen and understand your concerns. After years of dealing with pain, she helped me make a real and lasting improvement. I’m very grateful for her expertise and would highly recommend her!",
+        author: "Irina Musch"
+    },
+    {
+        text: "Een hele fijne fysiopraktijk! Ze nemen echt de tijd voor je en luisteren goed naar je klachten. Je krijgt duidelijke en eerlijke uitleg en advies. Je voelt je serieus genomen en goed geholpen. Absoluut een aanrader!",
+        author: "Natascha Wesseling"
     }
 ];
 
