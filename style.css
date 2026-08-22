@@ -498,7 +498,19 @@ img {
     background-color: var(--color-charcoal);
     transition: var(--transition-smooth);
 }
+/* Smooth positioning below sticky header */
+#about,
+#treatments,
+#klachten,
+#tarieven,
+#contact {
+    scroll-margin-top: 110px;
+}
 
+/* Mobile styles */
+@media (max-width: 900px) {
+    ...
+}
 /* Hamburger active transformation */
 .mobile-nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
