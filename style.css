@@ -656,7 +656,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 20px;
-    margin-top: 28px;
+    margin-top: 32px;
+    margin-bottom: 25px;
     max-width: 620px;
 }
 
