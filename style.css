@@ -652,7 +652,20 @@ img {
     background-color: rgba(94, 106, 90, 0.12);
     pointer-events: none;
 }
+.hero-trust-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 28px;
+    max-width: 620px;
+}
 
+.hero-trust-bar span {
+    font-size: 11px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--color-sage);
+}
 /* 5. Benefits Strip */
 .benefits-strip-section {
     background-color: var(--color-white);
@@ -1784,6 +1797,13 @@ img {
     .footer-logos .site-logo-img,
     .footer-logos .hb-logo {
         max-width: 115px;
+    }
+}
+@media (max-width: 580px) {
+    .hero-trust-bar {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 22px;
     }
 }
 /* 11a. Tarieven Section */
