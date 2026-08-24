@@ -1079,6 +1079,15 @@ img {
         gap: 25px;
     }
 }
+/* Better transition: Welcome → Werkwijze */
+.about-welcome-section {
+    padding-bottom: 45px;
+}
+
+.werkwijze-section {
+    padding-top: 55px;
+    padding-bottom: 70px;
+}
 /* 7. Lead Therapist Profile Section (Updated for Team Collage) */
 .grid-2-profile {
     display: grid;
