@@ -3246,3 +3246,11 @@ img {
 .footer-book-link:hover {
     color: var(--color-white);
 }
+/* Keep detail-page navigation on one line */
+.treatment-detail-page .desktop-nav .nav-list {
+    gap: 28px;
+}
+
+.treatment-detail-page .desktop-nav .nav-link {
+    white-space: nowrap;
+}
