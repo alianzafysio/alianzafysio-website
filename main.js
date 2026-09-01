@@ -258,12 +258,11 @@ if (isValid) {
 });
 
 // ---------------------------------------------------------
-// GOOGLE REVIEWS ROTATOR
+// GOOGLE REVIEWS ROTATOR — 3 CARDS
 // ---------------------------------------------------------
 
-const reviewText = document.getElementById('rotating-review-text');
-const reviewAuthor = document.getElementById('rotating-review-author');
-const reviewCard = document.querySelector('.review-rotator');
+const reviewGrid = document.querySelector('.review-rotator');
+const reviewCards = document.querySelectorAll('.reviews-grid .featured-review');
 
 const reviews = [
     {
@@ -304,24 +303,41 @@ const reviews = [
     }
 ];
 
-let currentReview = 0;
+let reviewStartIndex = 1;
 
-function showNextReview() {
+function updateReviewCards() {
 
-    currentReview = (currentReview + 1) % reviews.length;
+    if (!reviewGrid || !reviewCards.length) return;
 
-    reviewCard.classList.add('is-changing');
+    reviewGrid.classList.add('is-changing');
 
     setTimeout(() => {
 
-        reviewText.textContent = `“${reviews[currentReview].text}”`;
-        reviewAuthor.textContent = `— ${reviews[currentReview].author}`;
+        reviewCards.forEach((card, index) => {
 
-        reviewCard.classList.remove('is-changing');
+            const reviewIndex = (reviewStartIndex + index) % reviews.length;
+            const review = reviews[reviewIndex];
+
+            const text = card.querySelector('.rotating-review-text');
+            const author = card.querySelector('.rotating-review-author');
+
+            if (text) {
+                text.textContent = `“${review.text}”`;
+            }
+
+            if (author) {
+                author.textContent = `— ${review.author}`;
+            }
+
+        });
+
+        reviewGrid.classList.remove('is-changing');
+
+        reviewStartIndex = (reviewStartIndex + 3) % reviews.length;
 
     }, 300);
 }
 
-if (reviewText && reviewAuthor && reviewCard) {
-    setInterval(showNextReview, 4000);
+if (reviewGrid && reviewCards.length) {
+    setInterval(updateReviewCards, 7000);
 }
