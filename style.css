@@ -3335,3 +3335,31 @@ img {
         justify-self: stretch;
     }
 }
+/* Google Reviews — action buttons side by side */
+.google-reviews-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.google-reviews-actions .btn {
+    width: auto;
+    min-width: 250px;
+}
+
+/* Mobile: stack buttons */
+@media (max-width: 600px) {
+    .google-reviews-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .google-reviews-actions .btn {
+        width: 100%;
+        min-width: 0;
+    }
+}
