@@ -298,9 +298,21 @@ const reviews = [
         author: "Irina Musch"
     },
     {
-        text: "Een hele fijne fysiopraktijk! Ze nemen echt de tijd voor je en luisteren goed naar je klachten. Je krijgt duidelijke en eerlijke uitleg en advies. Je voelt je serieus genomen en goed geholpen. Absoluut een aanrader!",
-        author: "Natascha Wesseling"
-    }
+    text: "Een hele fijne fysiopraktijk! Ze nemen echt de tijd voor je en luisteren goed naar je klachten. Je krijgt duidelijke en eerlijke uitleg en advies. Je voelt je serieus genomen en goed geholpen. Absoluut een aanrader!",
+    author: "Natascha Wesseling"
+},
+{
+    text: "Alianza Fysio Haarlem is een mega fijne praktijk. Francisco heeft mij van mijn rug & nek klachten afgeholpen. Ook mijn vriendin was binnen no time van haar sportblessure af! Ik raad iedereen deze fysio praktijk aan!",
+    author: "James Halmann"
+},
+{
+    text: "Finding Francisco as my physio was a relieve! After many trials I finally found a person that not only helps with injuries and pain, but also recommends many exercises for good recovery. Special bonus to the dry needling, that really made a difference on my recovery.",
+    author: "Pilar Cerezo"
+},
+{
+    text: "Ik ben ontzettend tevreden over de behandelingen die Maartje geeft. Er wordt goed naar je geluisterd en er wordt echt gekeken waar de klachten vandaan komen. De behandeling is deskundig, persoonlijk en met veel aandacht voor wat je nodig hebt. Een absolute aanrader dus!",
+    author: "Trimstyle Overveen Wendy Byrszel"
+}
 ];
 
 let reviewStartIndex = 1;
